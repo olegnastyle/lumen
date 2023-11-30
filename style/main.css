@@ -44,12 +44,12 @@ footer {
 }
 
 .lang {
-    margin-top: 120px;
+    position: relative;
+    color: #f1f1f1;
 
-    & a {
+    & label {
         display: flex;
-        justify-self: start;
-        gap: 4px;
+        gap: 5px;
     }
 
     & span {
@@ -61,15 +61,24 @@ footer {
         background-color: #25325e;
         border-radius: 10px;
         list-style: none;
-        position: relative;
-        top: 10px;
-        right: 10px;
-        display: block;
         width: 130px;
+
+        position: absolute; /* Абсолютное позиционирование */
+        left: -10px;
+        top: 2em; /* Положение меню */
+        margin: 0;
 
         -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+
+    & input, ul {
+        display: none;
+    }
+
+    & :checked ~ ul {
+        display: block; /* Показываем меню */
     }
 
     & li {
@@ -83,6 +92,9 @@ footer {
         }
         
         & a {
+            display: flex;
+            justify-self: start;
+            gap: 4px;
             padding: 10px;
 
             &:hover {
@@ -90,10 +102,6 @@ footer {
             }
         }
     }
-}
-
-aside:checked > ul {
-    display: block;
 }
 
 .english:before {
@@ -188,3 +196,4 @@ button {
         filter: brightness(1);
     }
 }
+

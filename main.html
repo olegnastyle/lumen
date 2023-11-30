@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Меню</title>
+  <style>
+   
+   
+   .dropdown ul {
+    list-style: none; /* Убираем маркеры списка */
+    background: #673AB7; /* Цвет фона */
+   }
+   .dropdown a { color: #fff; /* Цвет ссылок */ }
+
+
+
+
+   
+   .dropdown input, .dropdown ul { display: none; /* Прячем */ }
+   .dropdown :checked ~ ul {
+    display: inline-block; /* Показываем меню */
+   }
+  </style>
+ </head>
+ <body>
+  <div class="dropdown">
+   <input type="checkbox" id="menu">
+   <label for="menu">Выбери меня</label>
+   <ul>
+    <li><a href="#">Леонардо</a></li>
+    <li><a href="#">Рафаэль</a></li>
+    <li><a href="#">Донателло</a></li>
+    <li><a href="#">Микеланджело</a></li>
+   </ul>
+  </div>
+ </body>
+</html>
