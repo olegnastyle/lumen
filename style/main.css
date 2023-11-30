@@ -30,7 +30,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    width: 100%;
     height: 80px;
 }
 
@@ -66,12 +66,13 @@ footer {
         display: flex;
         gap: 5px;
         margin-left: 10px;
+        cursor: pointer;
     }
 
     & ul {
         list-style: none;
         flex-direction: column;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     & li {
@@ -95,17 +96,17 @@ footer {
     &:hover {
         background-color: #25325e;
         border-radius: 10px;
-        margin-top: 130px;
+        margin-top: 125px;
         transition: background-color .3s ease;
 
         & > ul {
             display: flex;
         }
-    }
-}
 
-.lang:hover hr {
-    opacity: .4;
+        & hr {
+            opacity: .4;
+        }
+    }
 }
 
 .english:before {
@@ -201,3 +202,11 @@ button {
     }
 }
 
+.logo {
+    background-image: url(../style/img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 757px;
+    margin: 5% 23% 0;
+}
