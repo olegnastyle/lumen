@@ -46,60 +46,54 @@ footer {
 .lang {
     position: relative;
     color: #f1f1f1;
-
-    & label {
-        display: flex;
-        gap: 5px;
-    }
+    width: 130px;
+    padding-top: 10px;
 
     & span {
         display: inline-block;
         transform: rotate(90deg);
     }
 
+    & input, ul {display: none;}
+
+    & label {
+        display: flex;
+        gap: 5px;
+        margin-left: 10px;
+    }
+
     & ul {
-        background-color: #25325e;
-        border-radius: 10px;
         list-style: none;
-        width: 130px;
-
-        position: absolute; /* Абсолютное позиционирование */
-        left: -10px;
-        top: 2em; /* Положение меню */
-        margin: 0;
-
-        -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-        -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    }
-
-    & input, ul {
-        display: none;
-    }
-
-    & :checked ~ ul {
-        display: block; /* Показываем меню */
+        flex-direction: column;
+        margin-top: 10px;
     }
 
     & li {
 
-        &:first-child a {
-            border-radius: 10px 10px 0 0;
-        }
-
         &:last-child a {
             border-radius: 0 0 10px 10px;
         }
-        
-        & a {
-            display: flex;
-            justify-self: start;
-            gap: 4px;
-            padding: 10px;
 
-            &:hover {
-                background-color: #3c5a95;
-            }
+        & > a {
+            display: flex;
+            gap: 5px;
+            padding: 10px;
+        }
+    
+        &:hover {
+            background-color: #3c5a95;
+            transition: background-color .3s ease;
+        }
+    }
+
+    &:hover {
+        background-color: #25325e;
+        border-radius: 10px;
+        margin-top: 130px;
+        transition: background-color .3s ease;
+
+        & > ul {
+            display: flex;
         }
     }
 }

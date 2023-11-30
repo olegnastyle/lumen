@@ -4,34 +4,53 @@
   <meta charset="utf-8">
   <title>Меню</title>
   <style>
-   
-   
-   .dropdown ul {
-    list-style: none; /* Убираем маркеры списка */
-    background: #673AB7; /* Цвет фона */
+    input, ul {display: none;}
+
+    label, ul {width: 100%;}
+
+   .lang {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    width: 130px;
+    padding: 10px;
    }
-   .dropdown a { color: #fff; /* Цвет ссылок */ }
 
-
-
-
-   
-   .dropdown input, .dropdown ul { display: none; /* Прячем */ }
-   .dropdown :checked ~ ul {
-    display: inline-block; /* Показываем меню */
+   ul {
+    list-style: none;
    }
+
+   li > a {
+    padding: 10px;
+   }
+
+   aside:hover {
+    background-color: coral;
+
+    & > ul {
+        display: block;
+    }
+   }
+
+   aside:hover 
   </style>
  </head>
  <body>
-  <div class="dropdown">
-   <input type="checkbox" id="menu">
-   <label for="menu">Выбери меня</label>
-   <ul>
-    <li><a href="#">Леонардо</a></li>
-    <li><a href="#">Рафаэль</a></li>
-    <li><a href="#">Донателло</a></li>
-    <li><a href="#">Микеланджело</a></li>
-   </ul>
-  </div>
+    <aside class="lang">
+        <input type="checkbox" id="menu">
+        <label for="menu" class="english">English<span>></span></label>
+        <ul id="lang">
+            <li>
+                <a href="#" class="russian">Русский</a>
+            </li>
+            <li>
+                <a href="#" class="vietnamese">Tiếng Việt</a>
+            </li>
+            <li>
+                <a href="#" class="chinese">中文 (简体)</a>
+            </li>
+        </ul>
+    </aside>
  </body>
 </html>
