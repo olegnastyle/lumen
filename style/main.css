@@ -221,9 +221,9 @@ button {
 /* Персонажи */
 
 .persons {
-    background: url(../style/img/bg-persons.png);
     width: 1440px;
     margin: 0 auto;
+    height: 2000px;
 }
 
 .items {
@@ -245,6 +245,10 @@ button {
     &:checked > #item-action{
         display: flex;
     }
+
+    &:nth-child(8) .item{
+        filter: brightness(1);
+    }
 }
 
 .item {
@@ -258,9 +262,10 @@ button {
     height: 300px;
     background: rgb(43,121,200);
     background: linear-gradient(140deg, rgba(43,121,200,1) 0%, rgba(20,65,128,1) 100%);
+    filter: brightness(.9);
 
     &:hover {
-        filter: brightness(1.1);
+        filter: brightness(1.2);
     }
 
     &::before{
