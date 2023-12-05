@@ -242,11 +242,29 @@ button {
         border-radius: 0 10px 10px 0;
     }
 
+    &:last-child {
+        flex-direction: row-reverse;
+    }
+
     &:checked > #item-action{
         display: flex;
     }
 
-    &:nth-child(8) .item{
+    & input {
+        display: none;
+    }
+
+    & input:checked ~ div#item-action {
+        max-width: 720px;
+        -webkit-transition: max-width 0.5s ease-in-out,box-shadow 0.1s linear;
+        -moz-transition: max-width 0.5s ease-in-out,box-shadow 0.1s linear;
+        -o-transition: max-width 0.5s ease-in-out,box-shadow 0.1s linear;
+        -ms-transition: max-width 0.5s ease-in-out,box-shadow 0.1s linear;
+        transition: max-width 0.5s ease-in-out,box-shadow 0.1s linear;
+        box-shadow: 0 0 0 1px rgba(155,155,155,0.3);
+    }
+
+    & input:checked ~ label {
         filter: brightness(1);
     }
 }
@@ -258,8 +276,8 @@ button {
     color: #f1f1f1;
     writing-mode: vertical-lr;
     cursor: pointer;
-    width: 50px;
-    height: 300px;
+    width: 60px;
+    height: 440px;
     background: rgb(43,121,200);
     background: linear-gradient(140deg, rgba(43,121,200,1) 0%, rgba(20,65,128,1) 100%);
     filter: brightness(.9);
@@ -270,19 +288,27 @@ button {
 
     &::before{
         content: '';
-        background-image: url(../style/img/fire.png);
+        
+        background-image: url(../style/img/lotus.png);
         background-repeat: no-repeat;
-
+        background-size: contain;
+        opacity: .2;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        z-index: 100000;
     }
 }
 
 #item-action {
     display: flex;
     justify-content: start;
+    align-items: center;
     color: #adedf9;
-    padding: 10px;
-    height: 300px;
-    width: 720px;
+    height: 440px;
+    max-width: 0;
+    overflow: hidden;
     background-color: #3c5a95;
     -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
     -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
@@ -291,10 +317,14 @@ button {
     & p {
         text-wrap: wrap;
     }
-}
 
-.row {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    & div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    & img {
+        object-fit: cover;
+    }
 }
