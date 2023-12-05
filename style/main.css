@@ -13,7 +13,7 @@ a {
 }
 
 h2{
-    color: #3c5a95;
+    color: #ebcf9b;
 
     &::before{
         content: '~ ';
@@ -176,6 +176,11 @@ footer {
     & a {
         padding: 10px;
 
+        &:hover{
+            color: #ebcf9b;
+            transition: color .2s ease;
+        }
+
         &:active {
             color: #adedf9;
             transition: color .2s ease;
@@ -252,7 +257,7 @@ button {
         position: relative;
         right: 15rem;
         top: 5px;
-        color: #adedf9;
+        color: #ebcf9b;
 
         &::before {
             content: '';
@@ -289,13 +294,20 @@ button {
     }
 
     & iframe {
-        border: solid 5px #446c76;
+        border: solid 5px #4e7f7b;
         border-radius: 10px;
         -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 
-        
+        &:hover {
+            border: solid 5px #ebcf9b;
+            transition: border .3s ease;
+
+            -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        }
     }
 }
 
@@ -360,7 +372,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f1f1f1;
+    color: #ebcf9b;
     writing-mode: vertical-lr;
     cursor: pointer;
     width: 75px;
