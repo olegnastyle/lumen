@@ -3,25 +3,50 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: arial,sans-serif;
+    font-family: arial, sans-serif;
     border: 0;
     background: none;
+}
+
+@keyframes animalFire {
+    0% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(1.5);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
 }
 
 a {
     color: #f1f1f1;
 }
 
-h2{
+h2 {
     color: #ebcf9b;
 
-    &::before{
+    &::before {
         content: '~ ';
     }
 
-    &::after{
+    &::after {
         content: ' ~';
     }
+}
+
+h4 {
+    text-wrap: nowrap;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.g20 {
+    gap: 20px;
 }
 
 html,
@@ -78,7 +103,10 @@ footer {
         height: 8px;
     }
 
-    & input, ul {display: none;}
+    & input,
+    ul {
+        display: none;
+    }
 
     & label {
         display: flex;
@@ -101,15 +129,15 @@ footer {
             border-radius: 0 0 10px 10px;
         }
 
-        & > a {
+        &>a {
             display: flex;
             gap: 5px;
             padding: 10px;
         }
-    
+
         &:hover {
             background-color: #3c5a95;
-            transition: background-color .3s ease; 
+            transition: background-color .3s ease;
         }
     }
 
@@ -119,7 +147,7 @@ footer {
         margin-top: 125px;
         transition: background-color .3s ease;
 
-        & > ul {
+        &>ul {
             display: flex;
         }
 
@@ -176,7 +204,7 @@ footer {
     & a {
         padding: 10px;
 
-        &:hover{
+        &:hover {
             color: #ebcf9b;
             transition: color .2s ease;
         }
@@ -196,8 +224,8 @@ footer {
         position: relative;
         bottom: 29px;
     }
-    
-    & a:hover:before{
+
+    & a:hover:before {
         opacity: 1;
         transition: opacity .5s ease;
     }
@@ -240,19 +268,6 @@ button {
     animation: animalFire 3s linear infinite;
 }
 
-@keyframes animalFire {
-    0% {
-        filter: brightness(1);
-    }
-
-    50% {
-        filter: brightness(1.5);
-    }
-
-    100% {
-        filter: brightness(1);
-    }
-}
 /* Online */
 
 .online {
@@ -327,6 +342,118 @@ button {
     }
 }
 
+/* Download */
+
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: #f1f1f1;
+
+    & .down-content {
+        width: 900px;
+        height: 400px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        background-color: #3c5a95;
+        border-radius: 10px;
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 9px;
+        width: 180px;
+        background-color: #486bb1;
+        color: #ebcf9b;
+        border-radius: 5px;
+
+        &:hover {
+            filter: brightness(1.2);
+            transition: filter .3s linear;
+        }
+
+        &:active {
+            filter: brightness(.8);
+        }
+    }
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 0px;
+    background-color: #25325e;
+
+    & div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-wrap: balance;
+        padding: 10px;
+        text-align: center;
+
+        &:hover {
+            filter: brightness(1.1);
+            cursor: default;
+        }
+    }
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 5;
+    background-color: #25325e;
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #304170;
+}
+
+.div3 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: #304170;
+}
+
+.div4 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: #304170;
+}
+
+.div5 {
+    grid-area: 2 / 4 / 3 / 5;
+    background-color: #304170;
+}
+
+.div6 {
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: #486bb1;
+}
+
+.div7 {
+    grid-area: 3 / 2 / 4 / 3;
+    background-color: #486bb1;
+}
+
+.div8 {
+    grid-area: 3 / 3 / 4 / 4;
+    background-color: #486bb1;
+}
+
+.div9 {
+    grid-area: 3 / 4 / 4 / 5;
+    background-color: #486bb1;
+}
 
 /* Персонажи */
 
@@ -360,7 +487,7 @@ button {
         flex-direction: row-reverse;
     }
 
-    &:checked > #item-action{
+    &:checked>#item-action {
         display: flex;
     }
 
@@ -368,18 +495,18 @@ button {
         display: none;
     }
 
-    & input:checked ~ div#item-action {
+    & input:checked~div#item-action {
         max-width: 740px;
         padding: 1rem;
 
-        -webkit-transition: max-width 0.5s ease-in-out,box-shadow 0.1s linear;
-        -moz-transition: max-width 0.5s ease-in-out,box-shadow 0.1s linear;
-        -o-transition: max-width 0.5s ease-in-out,box-shadow 0.1s linear;
-        -ms-transition: max-width 0.5s ease-in-out,box-shadow 0.1s linear;
-        transition: max-width 0.5s ease-in-out,box-shadow 0.1s linear;
+        -webkit-transition: max-width 0.5s ease-in-out, box-shadow 0.1s linear;
+        -moz-transition: max-width 0.5s ease-in-out, box-shadow 0.1s linear;
+        -o-transition: max-width 0.5s ease-in-out, box-shadow 0.1s linear;
+        -ms-transition: max-width 0.5s ease-in-out, box-shadow 0.1s linear;
+        transition: max-width 0.5s ease-in-out, box-shadow 0.1s linear;
     }
 
-    & input:checked ~ label {
+    & input:checked~label {
         filter: brightness(1);
     }
 }
@@ -393,8 +520,8 @@ button {
     cursor: pointer;
     width: 75px;
     height: 520px;
-    background: rgb(43,121,200);
-    background: linear-gradient(140deg, rgba(43,121,200,1) 0%, rgba(20,65,128,1) 100%);
+    background: rgb(43, 121, 200);
+    background: linear-gradient(140deg, rgba(43, 121, 200, 1) 0%, rgba(20, 65, 128, 1) 100%);
     filter: brightness(.8);
 
     &:hover {
@@ -402,9 +529,9 @@ button {
         transition: filter .5s ease;
     }
 
-    &::before{
+    &::before {
         content: '';
-        
+
         background-image: url(../style/img/lotus.png);
         background-repeat: no-repeat;
         background-size: contain;
