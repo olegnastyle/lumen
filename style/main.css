@@ -11,6 +11,11 @@
 a {
     color: #f1f1f1;
 }
+
+h2{
+    color: #446c76;
+}
+
 html,
 body {
     width: 100%;
@@ -36,6 +41,9 @@ header {
 
 main {
     height: calc(5800px - 80px - 310px);
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
 
 footer {
@@ -207,15 +215,75 @@ button {
 }
 
 .logo {
-    background-image: url(../style/img/logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 30%;
-    height: 757px;
-    margin: 5% 23% 0;
+    width: 380px;
+    height: auto;
+    margin: 150px 0 0 350px;
 }
 
+/* Online */
 
+.online {
+    background-image: url(../style/img/bg-online.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 50%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    
+
+    & h3 {
+        display: flex;
+        gap: 5px;
+        margin-left: 50px;
+        margin-top: 15px;
+        mix-blend-mode: overlay;
+
+        &::before {
+            content: '';
+            background-color: rgb(0, 255, 0);
+            position: relative;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            top: 5px;
+        }
+    }
+}
+
+/* Twitch */
+
+.twitch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: #f1f1f1;
+    margin-top: -9rem;
+
+    &::before {
+        content: '';
+        background-image: url(../style/img/decore.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: 13rem;
+        right: 18rem;
+        display: block;
+        width: 150px;
+        height: 150px;
+    }
+
+    & iframe {
+        border: solid 5px #446c76;
+        border-radius: 10px;
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+        
+    }
+}
 
 
 /* Персонажи */
@@ -224,6 +292,11 @@ button {
     width: 1440px;
     margin: 0 auto;
     height: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: #f1f1f1;
 }
 
 .items {
