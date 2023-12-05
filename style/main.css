@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family:arial,sans-serif;
+    font-family: arial,sans-serif;
     border: 0;
     background: none;
 }
@@ -236,9 +236,23 @@ button {
 .logo {
     width: 460px;
     height: auto;
-    margin: 210px 0 0 300px;
+    margin: 180px 0 0 300px;
+    animation: animalFire 3s linear infinite;
 }
 
+@keyframes animalFire {
+    0% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(1.5);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
 /* Online */
 
 .online {
@@ -291,6 +305,8 @@ button {
         display: block;
         width: 150px;
         height: 150px;
+        filter: brightness(1);
+        animation: animalFire 3s linear infinite;
     }
 
     & iframe {
@@ -302,7 +318,7 @@ button {
 
         &:hover {
             border: solid 5px #ebcf9b;
-            transition: border .3s ease;
+            transition: border .3s linear;
 
             -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
             -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
@@ -383,6 +399,7 @@ button {
 
     &:hover {
         filter: brightness(1.2);
+        transition: filter .5s ease;
     }
 
     &::before{
