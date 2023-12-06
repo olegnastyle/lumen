@@ -326,6 +326,8 @@ button {
     bottom: 0;
     right: -5rem;
     z-index: 9999;
+    cursor: default;
+    overflow: hidden;
 
     & h3 {
         display: flex;
@@ -374,7 +376,7 @@ button {
     }
 
     & iframe {
-        border: solid 5px #4e7f7b;
+        border: solid 5px #486bb1   ;
         border-radius: 10px;
         -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
@@ -462,6 +464,7 @@ button {
     grid-column-gap: 3px;
     grid-row-gap: 0px;
     background-color: #25325e;
+    border-radius: 10px;
 
     & div {
         display: flex;
@@ -481,6 +484,7 @@ button {
 .div1 {
     grid-area: 1 / 1 / 2 / 5;
     background-color: #25325e;
+    border-radius: 10px 10px 0 0;
 }
 
 .div2 {
@@ -506,6 +510,7 @@ button {
 .div6 {
     grid-area: 3 / 1 / 4 / 2;
     background-color: #486bb1;
+    border-radius: 0 0 0 10px;
 }
 
 .div7 {
@@ -521,6 +526,7 @@ button {
 .div9 {
     grid-area: 3 / 4 / 4 / 5;
     background-color: #486bb1;
+    border-radius: 0 0 10px 0;
 }
 
 /* Персонажи */
