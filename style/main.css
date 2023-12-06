@@ -35,21 +35,54 @@
     }
 }
 
+@keyframes animalLantern {
+    0% {
+        filter: brightness(.8);
+    }
 
+    50% {
+        filter: brightness(1.2);
+    }
+
+    100% {
+        filter: brightness(.8);
+    }
+}
+
+@keyframes animalLanternMotion {
+    0% {
+        transform: rotate(10deg) matrix(1, 0, 0, 1, -11, 0);
+    }
+
+    20% {
+        transform: rotate(0deg) matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    40% {
+        transform: rotate(-10deg) matrix(1, 0, 0, 1, 11, 0);
+    }
+
+    60% {
+        transform: rotate(0deg) matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    100% {
+        transform: rotate(10deg) matrix(1, 0, 0, 1, -11, 0);
+    }
+}
 
 a {
     color: #f1f1f1;
 }
 
 h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #ebcf9b;
 
     &::before {
-        content: '~ ';
-    }
-
-    &::after {
-        content: ' ~';
+        content: url(../style/img/decoration.png);
     }
 }
 
@@ -212,7 +245,7 @@ footer {
     width: 20px;
 }
 
-.nav {
+nav {
     display: flex;
     gap: 60px;
 
@@ -332,6 +365,7 @@ button {
         position: relative;
         top: 10rem;
         right: 18rem;
+        z-index: 2;
         display: block;
         width: 150px;
         height: 150px;
@@ -345,6 +379,8 @@ button {
         -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        position: relative;
+        z-index: 1;
 
         &:hover {
             border: solid 5px #ebcf9b;
@@ -365,6 +401,7 @@ button {
     align-items: center;
     gap: 40px;
     color: #f1f1f1;
+    margin-top: -18%;
 
     & .down-content {
         width: 900px;
@@ -400,6 +437,21 @@ button {
         &:active {
             filter: brightness(.8);
         }
+    }
+
+    &:before {
+        content: '';
+        background-image: url(../style/img/lantern.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 120px;
+        height: 180px;
+        position: relative;
+        top: 22.4rem;
+        left: 25rem;
+        z-index: 1;
+        filter: drop-shadow(0 0 40px #ebcf9b);
+        animation: animalLanternMotion 3s linear infinite;
     }
 }
 
