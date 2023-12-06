@@ -1,3 +1,14 @@
+::-webkit-scrollbar {
+    background-color: #486bb1;
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3c5a95;
+    border-radius: 5px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,6 +17,8 @@
     font-family: arial, sans-serif;
     border: 0;
     background: none;
+    scrollbar-color: #3c5a95 #486bb1;
+    scrollbar-width: thin;
 }
 
 @keyframes animalFire {
@@ -21,6 +34,8 @@
         filter: brightness(1);
     }
 }
+
+
 
 a {
     color: #f1f1f1;
@@ -344,7 +359,7 @@ button {
 
 /* Download */
 
-.download {
+#download {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -373,12 +388,13 @@ button {
         padding: 9px;
         width: 180px;
         background-color: #486bb1;
-        color: #ebcf9b;
+        color: #adedf9;
         border-radius: 5px;
 
         &:hover {
             filter: brightness(1.2);
-            transition: filter .3s linear;
+            transition: all .3s linear;
+            color: #ebcf9b;
         }
 
         &:active {
@@ -515,7 +531,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ebcf9b;
+    color: #adedf9;
     writing-mode: vertical-lr;
     cursor: pointer;
     width: 75px;
@@ -529,9 +545,12 @@ button {
         transition: filter .5s ease;
     }
 
+    &:active {
+        color: #ebcf9b;
+    }
+
     &::before {
         content: '';
-
         background-image: url(../style/img/lotus.png);
         background-repeat: no-repeat;
         background-size: contain;
