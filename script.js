@@ -1,6 +1,6 @@
 function blockClick() {
-    let item = document.querySelector('#item-action').style = function (){
-        if (item.style === ''){
+    let item = document.querySelector('#item-action').style = function () {
+        if (item.style === '') {
             return item.style = 'display:flex;'
             console.log(item)
         } else if (item.style === 'display:flex;') {
@@ -12,3 +12,24 @@ function blockClick() {
         console.log(item)
     }
 }
+
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    effect: 'coverflow',
+    slidesPerView: 'auto',
+    ceneteredSlides: true,
+    coverflowEffect: {
+        depth: 300,
+        modifier: 1,
+        rotate: 50,
+        scale: 1,
+        slideShadows: true,
+        stretch: 0
+    },
+})
+
