@@ -51,7 +51,8 @@
                 height: 354,
                 channel: "jadedynastylumen",
                 parent: ["embed.example.com", "othersite.example.com"],
-                autoplay: true
+                autoplay: true,
+                audio: true,
             };
             var player = new Twitch.Player("twitch-embed", options);
             player.setVolume(0.5);
@@ -95,7 +96,7 @@
             <h2>Персонажи</h2>
             <div class="items">
                 <div class="block">
-                    <input id="ac-1" type="radio" name="accordion" checked>
+                    <input id="ac-1" type="radio" name="accordion">
                     <label class="item" for="ac-1">Айне</label>
                     <div id="item-action">
                         <img src="./style/img/person/close-up/Люди/Айне.png" width="350px">
@@ -150,7 +151,7 @@
                     </div>
                 </div>
                 <div class="block">
-                    <input id="ac-4" type="radio" name="accordion">
+                    <input id="ac-4" type="radio" name="accordion" checked>
                     <label class="item" for="ac-4">Морто</label>
                     <div id="item-action">
                         <img src="./style/img/person/close-up/Люди/Морто.png" width="400px">
@@ -261,6 +262,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="fotogalery">
+            <h2>Фотогалерея</h2>
+            
         </div>
     </main>
     <footer></footer>
