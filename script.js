@@ -26,10 +26,14 @@ const swiper = new Swiper('.swiper', {
     coverflowEffect: {
         depth: 300,
         modifier: 1,
-        rotate: 50,
+        rotate: 30,
         scale: 1,
-        slideShadows: true,
-        stretch: 0
+        slideShadows: false, // тень на слайде
+        stretch: 450
     },
+    keyboard: {
+        enabled: true,
+      },
+      initialSlide: 1,
 })
 
