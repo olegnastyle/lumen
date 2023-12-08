@@ -98,6 +98,10 @@
         }
     }
 
+    .swiper {
+        padding: 20px;
+    }
+
     .swiper-slide {
         width: 320px;
     }
@@ -119,6 +123,8 @@
     }
 
     .copy {
+        align-items: center;
+        text-align: center;
         width: 300px;
     }
 
@@ -216,6 +222,10 @@
         & img {
             zoom: 50%;
         }
+    }
+    
+    .swiper {
+        padding: 20px;
     }
 
     .swiper-slide {

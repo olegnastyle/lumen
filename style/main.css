@@ -692,7 +692,6 @@ button {
 
 .swiper-slide {
     width: 900px;
-    border-radius: 10px;
 
     & img {
         display: block;
@@ -742,6 +741,7 @@ button {
     & img {
         filter: brightness(40%);
         transition: all .3s linear;
+        border-radius: 10px;
     }
 }
 

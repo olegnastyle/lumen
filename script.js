@@ -17,8 +17,8 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true, // зациклить слайдер
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next', // кнопка назад
+        prevEl: '.swiper-button-prev', // кнопка вперед
     },
     effect: 'coverflow',
     slidesPerView: 'auto',
@@ -29,7 +29,7 @@ const swiper = new Swiper('.swiper', {
         rotate: 30,
         scale: 1,
         slideShadows: false, // тень на слайде
-        stretch: 80
+        stretch: 80, // растянуть простраство между слайдами px
     },
     keyboard: {
         enabled: true,
