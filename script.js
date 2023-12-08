@@ -15,7 +15,7 @@ function blockClick() {
 
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
-    loop: true,
+    loop: true, // зациклить слайдер
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
