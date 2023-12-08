@@ -22,6 +22,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 @keyframes animalBreath {
     0% {
         filter: brightness(1);
