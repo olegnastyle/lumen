@@ -836,3 +836,57 @@ button {
         }
     }
 }
+
+/* Rulse */
+
+#rules {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    
+    background: #304170e9;
+    color: white;
+    font-size: 1rem;
+    padding: 2% 5%;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+    position: absolute;
+    z-index: 999999;
+
+    & button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        color: white;
+        width: 36px;
+        height: 18px;
+        font-size: 45px;
+        position: absolute;
+        right: 100px;
+        &:hover {
+            filter: drop-shadow(0 0 10px #ebcf9b);
+        }
+        &:active {
+            &:hover {
+                filter: drop-shadow(0 0 10px #3d3628);
+            }
+        }
+    }
+
+    &:first-child {
+        align-items: center !important;
+    }
+
+    & :last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    & li {
+        margin-left: 20px;
+    }
+}

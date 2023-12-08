@@ -37,3 +37,12 @@ const swiper = new Swiper('.swiper', {
       initialSlide: 1,
 })
 
+const rulesID = document.getElementById('rules').style.display
+
+function rulesFlex(){
+    document.getElementById("rules").style.display = 'flex';
+}
+
+function rulesClose(){
+    document.getElementById("rules").style.display = 'none';
+}
