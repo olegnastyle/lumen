@@ -1,4 +1,11 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    h2 {
+        font-size: 18px;
+        &::before {
+            zoom: 50%;
+        }
+    }
+    
     header {
         display: none;
     }
@@ -62,11 +69,31 @@
     }
 
     #download {
-        display: none;
+        
+        & .down-content {
+            width: 320px;
+            height: 220px;
+            background-color: #3c5a95;
+
+            &:before {
+                content: '';
+                background-image: url(../style/img/lantern.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 80px;
+                height: 140px;
+                position: absolute;
+                margin-bottom: 100px;
+                margin-left: 190px;
+                z-index: 1;
+                filter: drop-shadow(0 0 40px #ebcf9b);
+                animation: animalLanternMotion 3s linear infinite;
+            }
+        }
     }
 
     .parent {
-        font-size: 12px;
+        font-size: 8px;
     }
 
     .persons {
