@@ -1,27 +1,92 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
     header {
-        width: 1280px;
+        width: 740px;
+        height: 50px;
     }
 
     main {
-        width: 1280px;
+        width: 740px;
+    }
+
+    .lang {
+        zoom: 80%;
+        margin-top: 10px;
+        & ul {
+            margin-top: 0;
+        }
+        &:hover label {
+            margin-top: 17px;
+        }
+    }
+
+    nav {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    button {
+        zoom: 75%;
     }
 
     .logo {
-        width: 360px;
-        margin: 120px 0 0 300px;
+        width: 220px;
+        margin: 60px 0 0 160px;
+    }
+
+    .online {
+        zoom: 75%;
+        right: -5rem;
+    }
+
+    #download {
+        & .down-content {
+            width: 740px;
+            height: 320px;
+            &:before {
+                margin-bottom: 10.5rem;
+                margin-left: 38rem;
+            }
+        }
+    }
+
+    .parent {
+        font-size: 12px;
     }
 
     .persons {
-        width: 1280px;
+        width: 740px;
+    }
+
+    .block {
+        & input:checked~div#item-action {
+            max-width: 400px;
+        }
     }
 
     .item {
-        width: 50px;
+        width: 30px;
+        height: 300px;
+        font-size: 10px;
+        &::before {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    #item-action {
+        height: 300px;
+        font-size: 9px;
+        & img {
+            zoom: 50%;
+        }
+    }
+
+    .swiper-slide {
+        width: 740px;
     }
 
     .foot {
-        width: 1280px;
+        width: 740px;
         padding: 10px 20px;
     }
 }
@@ -81,94 +146,38 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     header {
-        width: 740px;
-        height: 50px;
+        width: 1280px;
+        height: 80px;
     }
 
     main {
-        width: 740px;
-    }
-
-    .lang {
-        zoom: 80%;
-        margin-top: 10px;
-        & ul {
-            margin-top: 0;
-        }
-        &:hover label {
-            margin-top: 17px;
-        }
+        width: 1280px;
     }
 
     nav {
-        gap: 10px;
-        font-size: 12px;
-    }
-
-    button {
-        zoom: 75%;
+        font-size: 14px;
     }
 
     .logo {
-        width: 260px;
-        margin: 80px 0 0 240px;
+        width: 360px;
+        margin: 120px 0 0 300px;
     }
-
-    .online {
-        zoom: 75%;
-    }
-
-    #download {
-        & .down-content {
-            width: 740px;
-            height: 320px;
-            &:before {
-                margin-bottom: 10.5rem;
-                margin-left: 38rem;
-            }
-        }
-    }
-
-    .parent {
-        font-size: 12px;
+    button {
+        zoom: normal;
     }
 
     .persons {
-        width: 720px;
-    }
-
-    .block {
-        & input:checked~div#item-action {
-            max-width: 400px;
-        }
+        width: 1280px;
     }
 
     .item {
-        width: 30px;
-        height: 300px;
-        font-size: 10px;
-        &::before {
-            width: 20px;
-            height: 20px;
-        }
-    }
-
-    #item-action {
-        height: 300px;
-        font-size: 9px;
-        & img {
-            zoom: 50%;
-        }
-    }
-
-    .swiper-slide {
-        width: 740px;
+        width: 50px;
     }
 
     .foot {
-        width: 740px;
+        width: 1280px;
         padding: 10px 20px;
     }
 }
