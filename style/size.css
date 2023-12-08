@@ -331,6 +331,7 @@
 
     nav {
         font-size: 14px;
+        gap: 40px;
     }
 
     .logo {
