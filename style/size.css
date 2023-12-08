@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     header {
         display: none;
     }
@@ -39,6 +39,7 @@
     }
 
     .twitch {
+        width: 320px;
         &::before {
             content: '';
             background-image: url(../style/img/decore.png);
@@ -133,7 +134,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     header {
         display: flex;
         width: 740px;
@@ -227,7 +228,7 @@
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
     header {
         display: flex;
         width: 980px;
@@ -283,7 +284,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
     header {
         display: flex;
         width: 1280px;
