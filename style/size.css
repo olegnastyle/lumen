@@ -50,8 +50,8 @@
             right: 140px;
             z-index: 2;
             display: block;
-            width: 80px;
-            height: 80px;
+            width: 120px;
+            height: 120px;
             filter: brightness(1);
             animation: animalFire 5s linear infinite;
         }
