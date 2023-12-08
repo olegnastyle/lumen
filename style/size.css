@@ -69,11 +69,10 @@
     }
 
     #download {
-        
         & .down-content {
             width: 320px;
             height: 220px;
-            background-color: #3c5a95;
+            padding: 10px;
 
             &:before {
                 content: '';
