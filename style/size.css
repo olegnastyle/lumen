@@ -46,7 +46,6 @@
     }
 
     .twitch {
-        width: 320px;
         &::before {
             content: '';
             background-image: url(../style/img/decore.png);
