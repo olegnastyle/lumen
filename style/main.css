@@ -291,17 +291,19 @@ nav {
 
     & a:before {
         content: '';
-        opacity: 0;
         display: flex;
         width: 100%;
-        border: solid 3px #adedf9;
+        opacity: 0;
+        max-width: 0;
+        border: solid 2px #adedf9;
         position: relative;
-        bottom: 29px;
+        bottom: 30px;
     }
 
     & a:hover:before {
         opacity: 1;
-        transition: opacity .5s ease;
+        max-width: 100%;
+        transition: max-width .3s ease;
     }
 }
 
