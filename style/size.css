@@ -28,14 +28,32 @@
     }
 
     .logo {
-        width: 140px;
-        margin: 80px 0 0 20px;
+        width: 180px;
+        margin: 100px 0 0 0;
     }
 
     .online {
         display: none;
         zoom: 75%;
         left: 0;
+    }
+
+    .twitch {
+        &::before {
+            content: '';
+            background-image: url(../style/img/decore.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
+            top: 100px;
+            right: 140px;
+            z-index: 2;
+            display: block;
+            width: 80px;
+            height: 80px;
+            filter: brightness(1);
+            animation: animalFire 5s linear infinite;
+        }
     }
 
     .desctop {
