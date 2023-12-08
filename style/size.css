@@ -28,11 +28,12 @@
     }
 
     .logo {
-        width: 180px;
-        margin: 60px 0 0 160px;
+        width: 140px;
+        margin: 80px 0 0 20px;
     }
 
     .online {
+        display: none;
         zoom: 75%;
         left: 0;
     }
@@ -94,17 +95,17 @@
     }
 
     .copy {
-        & p {
-            width: 300px;
-        }
+        width: 300px;
     }
 
     .share {
-        zoom: 75%;
+        display: flex;
+        justify-content: center;
+        zoom: 70%;
     }
 
     .pay {
-        zoom: 60%;
+        zoom: 50%;
     }
 }
 
