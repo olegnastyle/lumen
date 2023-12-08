@@ -29,7 +29,7 @@ const swiper = new Swiper('.swiper', {
         rotate: 30,
         scale: 1,
         slideShadows: false, // тень на слайде
-        stretch: 450
+        stretch: 80
     },
     keyboard: {
         enabled: true,
