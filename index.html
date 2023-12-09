@@ -11,6 +11,14 @@
 </head>
 
 <body>
+    <section id="navigate">
+        <button onclick="navMobileClose()">×</button>
+        <a href="#">Новости</a>
+        <a href="#">Зал славы</a>
+        <a href="#">Скачать</a>
+        <a href="#">Обновления</a>
+        <a href="#">Правила на сервере</a>
+    </section>
     <section id="rules">
         <h2>Правила на сервере</h2>
         <button onclick="rulesClose()">×</button>
@@ -67,6 +75,10 @@
             <a href="#rules" onclick="rulesFlex()">Правила на сервере</a>
         </nav>
         <button><span>Login</span></button>
+    </header>
+    <header id="nav-mobile">
+        <a href="#">Личный кабинет</a>
+        <button onclick="navMobileFlex()">≡</button>
     </header>
     <main>
         <img loading="lazy"src="./style/img/logo.png" alt="Lumen" class="logo">

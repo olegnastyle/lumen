@@ -46,3 +46,11 @@ function rulesFlex(){
 function rulesClose(){
     document.getElementById("rules").style.display = 'none';
 }
+
+function navMobileFlex(){
+    document.getElementById("nav-mobile").style.display = 'flex';
+}
+
+function navMobileClose(){
+    document.getElementById("nav-mobile").style.display = 'none';
+}
