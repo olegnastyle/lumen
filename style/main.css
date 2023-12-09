@@ -867,6 +867,7 @@ button {
         font-size: 45px;
         position: absolute;
         right: 100px;
+        top: 60px;
         &:hover {
             filter: drop-shadow(0 0 10px #ebcf9b);
         }
