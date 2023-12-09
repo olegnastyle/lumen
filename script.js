@@ -48,9 +48,9 @@ function rulesClose(){
 }
 
 function navMobileFlex(){
-    document.getElementById("nav-mobile").style.display = 'flex';
+    document.getElementById("navigate").style.display = 'flex';
 }
 
 function navMobileClose(){
-    document.getElementById("nav-mobile").style.display = 'none';
+    document.getElementById("navigate").style.display = 'none';
 }
