@@ -911,6 +911,7 @@ nav {
         font-size: 40px;
     }
     & a {
+        padding: 10px 20px;
         &:hover {
             color: #adedf9;
             border: solid 1px #adedf9;
