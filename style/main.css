@@ -930,8 +930,10 @@ nav {
 #nav-mobile {
     display: none;
     justify-content: space-between;
+    align-items: center;
     width: 320px;
-    margin: 0 auto;
+    margin: 10px auto;
+    padding: 0 10px;
     @media screen and (min-width: 320px) and (max-width: 767px) {
         display: flex;
     }
@@ -939,5 +941,6 @@ nav {
         background: none;
         color: #f1f1f1;
         font-size: 48px;
+        width: 40px;
     }
 }
