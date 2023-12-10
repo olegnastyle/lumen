@@ -948,11 +948,9 @@ nav {
         color: #f1f1f1;
         font-size: 18px;
         width: 120px;
-        height: 120px;  
+        height: 120px;
+        margin-top: 50px;
         mix-blend-mode: hard-light;
-        filter: drop-shadow(0px 0px 10px #007aff);
-        & p {
-            /* mix-blend-mode: color; */
-        }
+        filter: drop-shadow(0px 0px 10px #ebcf9b);
     }
 }
