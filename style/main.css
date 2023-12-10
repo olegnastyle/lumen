@@ -911,6 +911,7 @@ nav {
         font-size: 50px;
         width: 50px;
         height: 50px;
+
     }
     & a {
         padding: 10px 20px;
@@ -932,7 +933,7 @@ nav {
 #nav-mobile {
     display: none;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: row-reverse;
     width: 320px;
     margin: 0 auto;
     padding: 0 10px;
@@ -941,8 +942,12 @@ nav {
     }
     & button {
         background: none;
+        background-image: url(../style/img/bg-menu.png);
+        background-repeat: no-repeat;
+        background-size: contain;
         color: #f1f1f1;
         font-size: 48px;
-        width: 40px;
+        width: 50px;
+        height: 50px;   
     }
 }
