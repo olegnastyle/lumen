@@ -899,7 +899,7 @@ nav {
     z-index: 99999;
     width: 100%;
     height: 100%;
-
+    transition: all 1s linear;
     background-color: #1e2947;
 
     & button {
