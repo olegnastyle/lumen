@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
-    <title>Обновления на сервере - Jade Dynasty Lumen</title>
+    <title>Личный кабинет - Jade Dynasty Lumen</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/size.css">
@@ -71,10 +71,10 @@
             <a href="index.html">Главная</a>
             <a href="hof.html">Зал славы</a>
             <a href="index.html#download">Скачать</a>
-            <a href="#">Обновления</a>
+            <a href="patch.html">Обновления</a>
             <a href="#rules" onclick="rulesFlex()">Правила на сервере</a>
         </nav>
-        <a href="account.html" class="login"><span>Login</span></a>
+        <a href="account.html" class="login"><span>Admin</span></a>
     </header>
     <header id="nav-mobile">
         <aside class="lang">
@@ -96,7 +96,22 @@
         <button onclick="navMobileFlex()"></button>
     </header>
     <main>
-        
+        <div id="account">
+            <nav>
+                <input type="radio" id="info" name="account" checked>
+                <label for="info">Информация</label>
+                <input type="radio" id="voting" name="account">
+                <label for="voting">Голосование</label>
+                <input type="radio" id="shop" name="account">
+                <label for="shop">Магазин</label>
+                <a href="#">Выход</a>
+            </nav>
+            <aside>
+                <div class="acc-info">Информация</div>
+                <div class="acc-voting">Голосование</div>
+                <div class="acc-shop">Магазин</div>
+            </aside>
+        </div>
     </main>
     <footer>
         <div class="foot">
