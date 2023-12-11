@@ -202,6 +202,7 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
     header {
         display: flex;
+        align-items: center;
         width: 740px;
         height: 50px;
     }
@@ -229,7 +230,7 @@
     }
 
     button {
-        zoom: 75%;
+        zoom: 40%;
     }
 
     .logo {
