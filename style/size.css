@@ -112,6 +112,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        &::before {
+            position: absolute;
+            right: 0;
+        }
     }
 
     .block {

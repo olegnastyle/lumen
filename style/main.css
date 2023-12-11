@@ -650,6 +650,10 @@ nav {
         height: 40px;
         position: absolute;
         top: 0;
+        
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        &::before {right: 10px;}
     }
 }
 
