@@ -226,11 +226,11 @@
 
     nav {
         gap: 10px;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     button {
-        zoom: 40%;
+        zoom: 50%;
     }
 
     .logo {
