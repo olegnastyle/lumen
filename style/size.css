@@ -35,7 +35,7 @@
         font-size: 12px;
     }
 
-    button {
+    .login {
         zoom: 75%;
     }
 
@@ -240,7 +240,7 @@
         font-size: 10px;
     }
 
-    button {
+    .login {
         zoom: 50%;
     }
 
@@ -322,7 +322,7 @@
     header {
         display: flex;
         width: 980px;
-        & button {
+        & .login {
             zoom: 80%;
         }
     }
@@ -405,7 +405,7 @@
         margin: 120px 0 0 300px;
     }
 
-    button {
+    .login {
         zoom: normal;
     }
 

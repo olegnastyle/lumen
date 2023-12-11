@@ -1,11 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+    <title>Обновления на сервере - Jade Dynasty Lumen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/size.css">
 </head>
+
 <body>
-    
+    <section id="navigate">
+        <button onclick="navMobileClose()">×</button>
+        <a href="index.html" onclick="navMobileClose()">Главная</a>
+        <a href="account.html" onclick="navMobileClose()">Личный кабинет</a>
+        <a href="hof.html" onclick="navMobileClose()">Зал славы</a>
+        <a href="index.html#download" onclick="navMobileClose()">Скачать</a>
+        <a href="#" onclick="navMobileClose()">Обновления</a>
+        <a href="#" onclick="rulesFlex()">Правила на сервере</a>
+    </section>
+    <section id="rules">
+        <h2>Правила на сервере</h2>
+        <button onclick="rulesClose()">×</button>
+        <div class="rules-text">
+            <ul><b>Имена персонажей:</b>
+                <li>Имена персонажей должны быть соответствующими и не оскорбительными. Запрещено выдавать себя за администратора или модератора.</li>
+            </ul>
+            <ul><b>Мошенничество и злоупотребление:</b>
+                <li>Мошенничество или использование эксплойтов строго запрещено. Сообщайте об любых потенциальных эксплойтах или проблемах администраторам сервера или модераторам. За подтвержденные сообщения могут быть предоставлены награды. Наказания за мошенничество могут включать временные или постоянные блокировки.</li>
+            </ul>
+            <ul><b>Безопасность аккаунта:</b>
+                <li>Защищайте свой аккаунт и не делитесь информацией для входа с другими. Ответственность за кражу аккаунта лежит на владельце аккаунта.</li>
+            </ul>
+            <ul><b>Лимит клиентов:</b>
+                <li>Разрешено использование нескольких клиентов, но ограничено 3 клиентами + 1 клиент лоток в Хзяне.</li>
+            </ul>
+            <ul><b>Видеонаблюдение (CCTV):</b>
+                <li>Не блокируйте видеонаблюдение в игре. Сначала вы получите предупреждение, затем будут применены наказания при повторном нарушении.</li>
+            </ul>
+            <ul><b>Правила мероприятий:</b>
+                <li>Участвуйте в игровых событиях и соревнованиях в соответствии с установленными правилами. Уважайте организаторов событий и соблюдайте справедливость в соревнованиях.</li>
+            </ul>
+            <ul><b>Руководство по поведению в сообществе:</b>
+                <li>Будьте позитивным и полезным участником игрового сообщества. Помогайте новичкам и способствуйте созданию дружелюбной атмосферы.</li>
+            </ul>
+            <ul><b>Валюта и экономика:</b>
+                <li>Не участвуйте в продаже золота, дюпликации предметов, продаже или обмене аккаунтов и других действиях, которые умаляют ценность внутриигровой экономики.</li>
+            </ul>
+        </div>
+    </section>
+    <header>
+        <aside class="lang">
+            <input type="checkbox" id="menu">
+            <label for="menu" class="english">English<span class="arrow"></span></label>
+            <hr>
+            <ul id="lang">
+                <li>
+                    <a href="#" class="russian">Русский</a>
+                </li>
+                <li>
+                    <a href="#" class="vietnamese">Tiếng Việt</a>
+                </li>
+                <li>
+                    <a href="#" class="chinese">中文 (简体)</a>
+                </li>
+            </ul>
+        </aside>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="hof.html">Зал славы</a>
+            <a href="index.html#download">Скачать</a>
+            <a href="#">Обновления</a>
+            <a href="#rules" onclick="rulesFlex()">Правила на сервере</a>
+        </nav>
+        <a href="account.html" class="login"><span>Login</span></a>
+    </header>
+    <header id="nav-mobile">
+        <aside class="lang">
+            <input type="checkbox" id="menu">
+            <label for="menu" class="english">English<span class="arrow"></span></label>
+            <hr>
+            <ul id="lang">
+                <li>
+                    <a href="#" class="russian">Русский</a>
+                </li>
+                <li>
+                    <a href="#" class="vietnamese">Tiếng Việt</a>
+                </li>
+                <li>
+                    <a href="#" class="chinese">中文 (简体)</a>
+                </li>
+            </ul>
+        </aside>
+        <button onclick="navMobileFlex()"></button>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="up"><a href="#"><img src="./style/img/up.png"></a></div>
+            <div class="foot-center">
+                <div class="copy">
+                    <h4>Jade Dnasty 2023 © Lumen</h4>
+                    <p><strong>Jade Dynasty</strong> – всемирно известная MMORPG, сюжет которой основан на битве за главный трофей — возможность обрести подлинное бессмертие!</p>
+                </div>
+                <div class="share">
+                    <a href="https://discord.gg/TeNbyexB6W" target="_blank"><img src="./style/img/share/discord.png" alt="Discord"></a>
+                    <a href="https://www.facebook.com/jadedynastylumen" target="_blank"><img src="./style/img/share/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/jadedynastylumen/" target="_blank"><img src="./style/img/share/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.twitch.tv/jadedynastylumen" target="_blank"><img src="./style/img/share/twitch.png" alt="Twitch"></a>
+                    <a href="https://vk.com/lumendynasty" target="_blank"><img src="./style/img/share/vk.png" alt="VK"></a>
+                </div>
+            </div>
+            <div class="pay">
+                <img src="./style/img/pay/visa.png" alt="Visa">
+                <img src="./style/img/pay/mastercard.png" alt="MasterCard">
+                <img src="./style/img/pay/paypal.png" alt="PayPal">
+                <img src="./style/img/pay/tinkof.png" alt="Tinkoff">
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
