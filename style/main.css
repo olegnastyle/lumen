@@ -962,12 +962,11 @@ nav {
     flex-direction: column;
     gap: 40px;
     width: 1440px;
-    margin: 0 auto;
+    margin: 80px auto;
     background-color: #304170c2;
     color: #f1f1f1;
     border-radius: 10px;
     padding: 10px;
-    margin: 80px 0;
     -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
     -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
@@ -975,6 +974,11 @@ nav {
     & p {
         text-align: center;
         text-wrap: balance;
+    }
+
+    & a {
+        text-decoration: underline;
+        cursor: pointer;
     }
 
     & table {
@@ -1017,6 +1021,9 @@ nav {
                 filter: invert(.1);
                 color: #ebcf9b;
                 transition: all .1s linear;
+                & a:hover {
+                    color: #ebcf9b;
+                }
             }
         }
 
@@ -1028,10 +1035,69 @@ nav {
             background-color: #202136;
         }
     }
-    
+
     & td {
         padding: 10px;
     }
 }
 
 
+#patch {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 1440px;
+    margin: 80px auto;
+    background-color: #304170c2;
+    color: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+
+    & input {
+        display: none;
+    }
+}
+
+.patch-all {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.patch {
+    background-color: #25325e;
+    border-radius: 10px;
+    padding: 20px;
+
+    & label {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        width: 100%;
+        font-weight: bold;
+        color: #adedf9;
+        & span {
+            opacity: .2;
+        }
+        &:hover {
+            color: #ebcf9b;
+        }
+    }
+
+    .patch-info {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        & li {
+            margin-left: 20px;
+        }
+    }
+
+    & input:checked~div.patch-info {
+        display: flex;
+    }
+}
