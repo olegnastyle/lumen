@@ -198,8 +198,9 @@ footer {
 
     & span {
         display: inline-block;
-        background-image: url(../style/img/arrow.svg);
+        background-image: url(../style/img/arrow_lang.png);
         background-repeat: no-repeat;
+        background-size: contain;
         width: 16px;
         height: 8px;
     }
