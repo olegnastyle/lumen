@@ -307,6 +307,9 @@
     header {
         display: flex;
         width: 980px;
+        & button {
+            zoom: 80%;
+        }
     }
 
     main {
@@ -315,6 +318,7 @@
 
     nav {
         gap: 20px;
+        font-size: 13px;
     }
 
     .logo {
