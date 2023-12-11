@@ -1,11 +1,12 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
     h2 {
         font-size: 18px;
+
         &::before {
             zoom: 50%;
         }
     }
-    
+
     header {
         display: none;
     }
@@ -17,9 +18,11 @@
     .lang {
         zoom: 80%;
         margin-top: 10px;
+
         & ul {
             margin-top: 0;
         }
+
         &:hover label {
             margin-top: 17px;
         }
@@ -112,17 +115,20 @@
     .block {
         display: flex;
         flex-direction: column;
+
         & input:checked~div#item-action {
             padding: 10px;
             max-height: 500px;
         }
+
         &:last-child {
             flex-direction: column-reverse;
         }
+
         &:first-child .item {
             border-radius: 10px 10px 0 0;
         }
-    
+
         &:last-child .item {
             border-radius: 0 0 10px 10px;
         }
@@ -143,14 +149,11 @@
         width: 320px;
         max-height: 0;
         font-size: 9px;
+
         & img {
             zoom: 50%;
         }
     }
-
-    
-
-    
 
     .swiper {
         padding: 20px;
@@ -170,7 +173,7 @@
         padding: 10px 20px;
     }
 
-    .foot-center{
+    .foot-center {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -208,9 +211,11 @@
     .lang {
         zoom: 80%;
         margin-top: 10px;
+
         & ul {
             margin-top: 0;
         }
+
         &:hover label {
             margin-top: 17px;
         }
@@ -239,6 +244,7 @@
         & .down-content {
             width: 740px;
             height: 320px;
+
             &:before {
                 margin-bottom: 10.5rem;
                 margin-left: 38rem;
@@ -264,6 +270,7 @@
         width: 30px;
         height: 300px;
         font-size: 10px;
+
         &::before {
             width: 20px;
             height: 20px;
@@ -273,11 +280,12 @@
     #item-action {
         height: 300px;
         font-size: 9px;
+
         & img {
             zoom: 50%;
         }
     }
-    
+
     .swiper {
         padding: 20px;
     }
@@ -324,6 +332,7 @@
     .item {
         width: 30px;
         height: 400px;
+
         &::before {
             width: 20px;
             height: 20px;
@@ -333,6 +342,7 @@
     #item-action {
         height: 400px;
         font-size: 12px;
+
         & img {
             zoom: 60%;
         }
@@ -368,6 +378,7 @@
         width: 360px;
         margin: 120px 0 0 300px;
     }
+
     button {
         zoom: normal;
     }
@@ -385,4 +396,3 @@
         padding: 10px 20px;
     }
 }
-
