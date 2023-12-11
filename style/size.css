@@ -23,7 +23,7 @@
         }
 
         &:hover label {
-            margin-top: 17px;
+            margin-top: 16px;
         }
         &:hover {
             transition: background-color .1s linear;
