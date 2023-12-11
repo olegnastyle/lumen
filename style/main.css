@@ -935,7 +935,8 @@ nav {
     justify-content: space-between;
     flex-direction: row-reverse;
     width: 320px;
-    height: 80px;
+    height: 8
+    0px;
     margin: 0 auto;
     @media screen and (min-width: 320px) and (max-width: 767px) {
         display: flex;
