@@ -173,7 +173,7 @@ main {
     flex-direction: column;
     gap: 80px;
     width: 1440px;
-    height: calc(100% - 366px);
+    height: calc(100%-366px);
     margin: 0 auto;
 }
 
