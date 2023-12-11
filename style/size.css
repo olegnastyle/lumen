@@ -27,7 +27,6 @@
             margin-top: 17px;
         }
         &:hover {
-            background-color: #3c5a95;
             transition: background-color .1s linear;
         }
     }
