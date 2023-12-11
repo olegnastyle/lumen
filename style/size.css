@@ -116,6 +116,9 @@
             padding: 10px;
             max-height: 450px;
         }
+        &:last-child {
+            flex-direction: column-reverse;
+        }
         &:first-child .item {
             border-radius: 10px 10px 0 0;
         }
