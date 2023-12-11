@@ -204,6 +204,9 @@
 
     #hof {
         width: 320px;
+        & table {
+            font-size: 8px;
+        }
     }
 }
 

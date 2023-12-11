@@ -981,7 +981,6 @@ nav {
         border-radius: 10px;
         border-collapse: collapse;
         cursor: default;
-        font-size: 8px;
         & a {
             text-decoration: underline;
         }
