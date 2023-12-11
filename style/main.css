@@ -935,20 +935,19 @@ nav {
     justify-content: space-between;
     flex-direction: row-reverse;
     width: 320px;
+    height: 80px;
     margin: 0 auto;
     @media screen and (min-width: 320px) and (max-width: 767px) {
         display: flex;
     }
     & button {
         background: none;
-        background-image: url(../style/img/bg-menu.png);
+        background-image: url(../style/img/menu.png);
         background-repeat: no-repeat;
         background-size: contain;
         color: #f1f1f1;
-        font-size: 23px;
-        width: 120px;
-        height: 120px;
-        margin-top: 50px;
+        width: 40px;
+        height: 40px;
         mix-blend-mode: hard-light;
         filter: drop-shadow(0px 0px 10px #adedf9);
     }
