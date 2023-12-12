@@ -1116,6 +1116,9 @@ header {
     -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
     -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    & u {
+        text-decoration: underline;
+    }
     & nav {
         display: flex;
         flex-direction: column;
@@ -1224,4 +1227,31 @@ header {
             }
         }
     }  
+}
+
+.acc-shop {
+    & label {
+        cursor: pointer;
+        color: #adedf9;
+        text-transform: uppercase;
+        &:hover {
+            border-bottom: solid 1px #ebcf9b;
+        }
+    }
+    & input, .shop-remedy, .shop-aid, .shop-material, .shop-functional {
+        display: none;
+        gap: 10px;
+    }
+    & input#shop-remedy:checked ~ .shop-remedy {display: flex;}
+    & input#shop-aid:checked ~ .shop-aid {display: flex;}
+    & input#shop-material:checked ~ .shop-material {display: flex;}
+    & input#shop-functional:checked ~ .shop-functional {display: flex;}
+    & select {
+        padding: 5px;
+        border: solid 1px #adedf9;
+        color: #1a182d;
+        background-color: #adedf91d;
+        border-radius: 10px;
+        width:max-content;
+    }
 }
