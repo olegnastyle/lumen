@@ -1214,6 +1214,10 @@ header {
             background-color: #253358;
             &:hover {
                 color: #ebcf9b;
+                & img {
+                    filter: opacity(.5);
+                    transition: filter .1s linear;
+                }
             }
             & img {
                 border-radius: 10px;
