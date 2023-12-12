@@ -1244,9 +1244,11 @@ header {
         color: #adedf9;
         text-transform: uppercase;
         &:hover {
-            border-bottom: solid 1px #ebcf9b;
+            color: #ebcf9b;
+            transition: color .1s linear;
         }
     }
+    & .shop-next label {font-size: 14px;}
     & input, .shop-remedy, .shop-aid, .shop-material, .shop-functional {
         display: none;
         gap: 10px;
@@ -1269,9 +1271,13 @@ header {
         align-items: center;
         gap: 5px;
         background-color: #304170;
+        border: solid 1px #304170;
         padding: 10px;
         width: max-content;
         border-radius: 10px;
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         & span {
             opacity: .6;
             font-size: 12px;
@@ -1293,7 +1299,7 @@ header {
             cursor: pointer;
             &:hover {
                 color: #ebcf9b;
-                background-color: #2d334b;
+                background-color: #3c5a95;
                 border: solid 1px #ebcf9b;
                 transition: all .1s linear;
             }
@@ -1307,12 +1313,16 @@ header {
             padding: 10px;
             background-color: #1a182d;
             border-radius: 10px;
+            width: 250px;
             position: absolute;
             z-index: 9999;
             margin-left: 320px;
             margin-top: -40px;
             & p {
                 font-size: 14px;
+            }
+            & p, span {
+                text-wrap: balance;
             }
         }
         & img {
@@ -1321,5 +1331,12 @@ header {
                 display: block;
             }
         }
+        &:hover {
+            border: solid 1px #ebcf9b;
+        }
     }
+    & .health, .energy, .spirit {display: none;}
+    & input#remedy-health:checked ~ .health {display: flex;flex-wrap: wrap;gap: 20px;}
+    & input#remedy-energy:checked ~ .energy {display: flex;flex-wrap: wrap;gap: 20px;}
+    & input#remedy-spirit:checked ~ .spirit {display: flex;flex-wrap: wrap;gap: 20px;}
 }
