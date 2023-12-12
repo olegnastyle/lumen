@@ -1203,7 +1203,7 @@ header {
     & .vote-now {
         display: flex;
         gap: 40px;
-        & a, img {
+        & a {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -1214,6 +1214,9 @@ header {
             background-color: #253358;
             &:hover {
                 color: #ebcf9b;
+            }
+            & img {
+                border-radius: 10px;
             }
         }
     }  
