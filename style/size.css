@@ -208,6 +208,23 @@
             font-size: 8px;
         }
     }
+
+    .account {
+        display: flex;
+        flex-direction: column;
+        & nav {
+            display: flex;
+            flex-direction: row !important;
+            text-wrap: nowrap;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow-x: auto;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
