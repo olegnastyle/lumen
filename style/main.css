@@ -1122,8 +1122,20 @@ header {
         gap: 20px;
         & label, a {
             cursor: pointer;
-            background-color: red;
+            background-color: #adedf9;
+            color: #1a182d;
             padding: 10px;
+            border-radius: 10px;
+            border-left: solid 2px #adedf9;
+            &:hover {
+                border-left: solid 2px #adedf9;
+                background-color: #304170;
+                color: #ebcf9b;
+                transition: all .1s linear;
+            }
+            &:active {
+                filter: brightness(.8);
+            }
         }
     }
     & aside {
@@ -1132,8 +1144,14 @@ header {
         overflow: scroll;
         width: 100%;
         height: 100vh;
-        & input, div {
+        & input, .acc-info, .acc-voting, .acc-shop, .acc-rewards, .acc-stash, .acc-stash, .acc-pvp, .acc-donation, .acc-journal {
             display: none;
+            flex-direction: column;
+            gap: 10px;
+        }
+        & hr {
+            border: 1px solid #adedf922;
+            width: 100%;
         }
     }
     & input#info:checked ~ .acc-info {
@@ -1171,10 +1189,27 @@ header {
     border-radius: 10px;
 }
 .acc-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     & #acc-online {
         color: #00ff77;
-    }
+    } 
+}
+
+.acc-voting {
+    & .vote-now {
+        display: flex;
+        gap: 40px;
+        & a, img {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #253358;
+            &:hover {
+                color: #ebcf9b;
+            }
+        }
+    }  
 }
