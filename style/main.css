@@ -1155,6 +1155,9 @@ header {
             border: 1px solid #adedf922;
             width: 100%;
         }
+        & span {
+            color: #adedf9;
+        }
     }
     & input#info:checked ~ .acc-info {
         display: flex;
