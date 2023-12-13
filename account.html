@@ -98,7 +98,7 @@
     <main>
         <div id="account">
             <div class="account">
-                <nav>
+                <nav class="account-nav">
                     <label for="info" class="checked-info">Информация</label>
                     <label for="voting" class="checked-voting">Голосование</label>
                     <label for="shop" class="checked-shop">Магазин</label>
@@ -129,6 +129,7 @@
                         <p>Kills: <span>999</span></p>
                         <p>Deaths: <span>98</span></p>
                     </div>
+
                     <input type="radio" id="voting" name="account">
                     <div class="acc-voting">
                         <p>Welcome, <span>admin</span>! You have <span>100`000</span> Lumens.</p>
@@ -158,6 +159,7 @@
                         <p>04.12.2023, 09:20:03 - gtop100</p>
                         <p>04.12.2023, 09:18:59 - topg</p>
                     </div>
+
                     <input type="radio" id="shop" name="account">
                     <div class="acc-shop">
                         <p>Welcome, <span>admin</span>! You have <span>100`000</span> Lumens.</p>
@@ -202,7 +204,7 @@
                         </select>
                         <hr>
 
-                        <input type="radio" name="shop-catalog" id="remedy-health">
+                        <input type="radio" name="shop-catalog" id="remedy-health" checked>
                         <div class="catalog-health">
                             <div class="shop-item">
                                 <img src="https://jd.pwdatabase.com/images/icons/23871.gif" width="36px" height="36px">
@@ -1017,11 +1019,21 @@
                             </div>
                         </div>
                     </div>
+
                     <input type="radio" id="rewards" name="account">
                     <div class="acc-rewards">
                         <p>Welcome, <span>admin</span>! You have <span>100`000</span> Lumens.</p>
                         <hr>
                         <h3>Вознаграждения</h3>
+                        <nav>
+                            <label for="">ONLINE_TIME</label>
+                            <label for="">LEVEL</label>
+                            <label for="">INFAMY</label>
+                            <label for="">VOTES</label>
+                            <label for="">REFERRAL</label>
+                            <label for="">MISC</label>
+                        </nav>
+                        
                     </div>
                     <input type="radio" id="stash" name="account">
                     <div class="acc-stash">
@@ -1029,24 +1041,28 @@
                         <hr>
                         <h3>Тайник</h3>
                     </div>
+
                     <input type="radio" id="pvp" name="account">
                     <div class="acc-pvp">
                         <p>Welcome, <span>admin</span>! You have <span>100`000</span> Lumens.</p>
                         <hr>
                         <h3>PvP-события</h3>
                     </div>
+
                     <input type="radio" id="donation" name="account">
                     <div class="acc-donation">
                         <p>Welcome, <span>admin</span>! You have <span>100`000</span> Lumens.</p>
                         <hr>
                         <h3>Пожертвование</h3>
                     </div>
+
                     <input type="radio" id="journal" name="account">
                     <div class="acc-journal">
                         <p>Welcome, <span>admin</span>! You have <span>100`000</span> Lumens.</p>
                         <hr>
                         <h3>Журналы</h3>
                     </div>
+
                 </aside>
             </div>
         </div>

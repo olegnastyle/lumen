@@ -1128,7 +1128,7 @@ header {
     & u {
         text-decoration: underline;
     }
-    & nav {
+    & .account-nav {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -1249,6 +1249,7 @@ header {
         }
     }
     & .shop-next label {font-size: 14px;}
+    & .shop-prev, .shop-next {display: flex;gap: 10px;}
     & input, .shop-remedy, .shop-aid, .shop-material, .shop-functional {
         display: none;
         gap: 10px;
@@ -1355,3 +1356,17 @@ header {
     & input#functional-function:checked ~ .catalog-functional-function {display: flex;flex-wrap: wrap;gap: 20px;}
 }
 
+.acc-rewards {
+    & nav {
+        display: flex;
+        gap: 10px;
+    }
+    & label {
+        color: #adedf9;
+        cursor: pointer;
+        &:hover {
+            color: #ebcf9b;
+            transition: all .1s linear;
+        }
+    }
+}
