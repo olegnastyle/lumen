@@ -1335,17 +1335,23 @@ header {
             border: solid 1px #ebcf9b;
         }
     }
-    & .health, .energy, .spirit {display: none;}
-    & input#remedy-health:checked ~ .health {display: flex;flex-wrap: wrap;gap: 20px;}
-    & input#remedy-energy:checked ~ .energy {display: flex;flex-wrap: wrap;gap: 20px;}
-    & input#remedy-spirit:checked ~ .spirit {display: flex;flex-wrap: wrap;gap: 20px;}
-}
+    & .catalog-health, .catalog-energy, .catalog-spirit, .catalog-storage, .catalog-function, .catalog-pet, .catalog-teleport, .catalog-refinery, .catalog-esper, .catalog-skill, .catalog-gem, .catalog-fashion, .catalog-functional-function {display: none;}
 
-/* input#info:checked ~ .checked-info {
-    background-color: red;
-} */
+    & input#remedy-health:checked ~ .catalog-health {display: flex;flex-wrap: wrap;gap: 20px;}
+    & input#remedy-energy:checked ~ .catalog-energy {display: flex;flex-wrap: wrap;gap: 20px;}
+    & input#remedy-spirit:checked ~ .catalog-spirit {display: flex;flex-wrap: wrap;gap: 20px;}
 
-.checked-info:has(~ #info:checked){
-    background-color: red;
+    & input#aid-storage:checked ~ .catalog-storage {display: flex;flex-wrap: wrap;gap: 20px;}
+    & input#aid-function:checked ~ .catalog-function {display: flex;flex-wrap: wrap;gap: 20px;}
+    & input#aid-pet:checked ~ .catalog-pet {display: flex;flex-wrap: wrap;gap: 20px;}
+    & input#aid-teleport:checked ~ .catalog-teleport {display: flex;flex-wrap: wrap;gap: 20px;}
+    & input#aid-refinery:checked ~ .catalog-refinery {display: flex;flex-wrap: wrap;gap: 20px;}
+
+    & input#material-esper:checked ~ .catalog-esper {display: flex;flex-wrap: wrap;gap: 20px;}
+    & input#material-skill:checked ~ .catalog-skill {display: flex;flex-wrap: wrap;gap: 20px;}
+    & input#material-gem:checked ~ .catalog-gem {display: flex;flex-wrap: wrap;gap: 20px;}
+    & input#material-fashion:checked ~ .catalog-fashion {display: flex;flex-wrap: wrap;gap: 20px;}
+
+    & input#functional-function:checked ~ .catalog-functional-function {display: flex;flex-wrap: wrap;gap: 20px;}
 }
 
