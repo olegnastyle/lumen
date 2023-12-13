@@ -1316,7 +1316,7 @@ header {
             width: 240px;
             position: absolute;
             z-index: 9999;
-            margin-left: 240px;
+            margin-left: 180px;
             margin-top: 40px;
             & p {
                 font-size: 14px;
