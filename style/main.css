@@ -658,7 +658,7 @@ header {
         opacity: .2;
         width: 40px;
         height: 40px;
-        position: relative;
+        position: absolute;
         top: 0;
         
     }
@@ -1321,7 +1321,7 @@ header {
             & p {
                 font-size: 14px;
             }
-            & p, span {
+            & h4, p, span {
                 text-wrap: balance;
             }
         }
@@ -1340,3 +1340,12 @@ header {
     & input#remedy-energy:checked ~ .energy {display: flex;flex-wrap: wrap;gap: 20px;}
     & input#remedy-spirit:checked ~ .spirit {display: flex;flex-wrap: wrap;gap: 20px;}
 }
+
+/* input#info:checked ~ .checked-info {
+    background-color: red;
+} */
+
+.checked-info:has(~ #info:checked){
+    background-color: red;
+}
+
