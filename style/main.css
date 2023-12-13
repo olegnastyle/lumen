@@ -1313,11 +1313,11 @@ header {
             padding: 10px;
             background-color: #1a182d;
             border-radius: 10px;
-            width: 250px;
+            width: 240px;
             position: absolute;
             z-index: 9999;
-            margin-left: 320px;
-            margin-top: -40px;
+            margin-left: 240px;
+            margin-top: 40px;
             & p {
                 font-size: 14px;
             }
