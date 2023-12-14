@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tesc.css">
+</head>
+<body>
+    <input type="radio" name="auth-nav" id="auth-nav">
+    <section id="auth">
+        <button onclick="authClose()" class="auth-close">×</button>
+        <div class="auth">
+            <h2>Логин</h2>
+            <input type="text" name="auth" placeholder="Логин">
+            <input type="password" name="auth" placeholder="Пароль">
+            <label for="checked"><input type="checkbox" name="checked" id="checked"> Запомнить меня</label>
+            <input type="submit" value="Войти">
+            <a href="#">Забыл пароль?</a>
+        </div>
+    </section>
+    <main>
+        <label for="auth-nav">Login</label>
+    </main>
+</body>
+</html>

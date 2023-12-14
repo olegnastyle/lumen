@@ -49,6 +49,17 @@
             </ul>
         </div>
     </section>
+    <section id="auth">
+        <button onclick="authClose()" class="auth-close">×</button>
+        <div class="auth">
+            <h2>Авторизация</h2>
+            <input type="text" name="auth" placeholder="Логин">
+            <input type="password" name="auth" placeholder="Пароль">
+            <label><input type="checkbox" name="auth" id="checked"> Запомнить меня</label>
+            <input type="submit" name="auth" value="Войти">
+            <a href="#">Забыл пароль?</a>
+        </div>
+    </section>
     <header>
         <aside class="lang">
             <input type="checkbox" id="menu">
@@ -72,7 +83,7 @@
             <a href="patch.html ">Обновления</a>
             <a href="#rules" onclick="rulesFlex()">Правила на сервере</a>
         </nav>
-        <a href="account.html" class="login"><span>Login</span></a>
+        <a onclick="authActive()" class="login"><span>Login</span></a>
     </header>
     <header id="nav-mobile">
         <aside class="lang">
