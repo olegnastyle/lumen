@@ -1176,7 +1176,6 @@ header {
     display: flex;
     gap: 20px;
     width: 100%;
-    /* background-color: #3c5a95; */
     padding: 10px;
     border-radius: 10px;
     & nav {
@@ -1196,10 +1195,13 @@ header {
         overflow: scroll;
         width: 100%;
         height: 100vh;
-        & input, .acc-info, .acc-voting, .acc-shop, .acc-rewards, .acc-stash, .acc-stash, .acc-pvp, .acc-donation, .acc-journal {
+        & .acc-info, .acc-voting, .acc-shop, .acc-rewards, .acc-stash, .acc-stash, .acc-pvp, .acc-donation, .acc-journal {
             display: none;
             flex-direction: column;
             gap: 10px;
+        }
+        & input {
+            display: none !important;
         }
         & hr {
             border: 1px solid #adedf922;
@@ -1207,6 +1209,116 @@ header {
         }
         & span {
             color: #adedf9;
+        }
+    }
+    & section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 410px;
+        height: max-content;
+    }
+    & #stash {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #3c5a95;
+        border-radius: 10px;
+        border: 2px solid #adedf922;
+        filter: drop-shadow(0 0 10px  #3c5a95);
+        padding: 10px;
+        overflow-y: scroll;
+        & button {
+            cursor: pointer;
+            border-radius: 10px;
+            &:active {
+                filter: brightness(.6);
+            }
+            & img {
+                border-radius: 5px;
+                border: solid 1px #3c5a95;
+                &:hover {
+                    border: solid 1px #ebcf9b;
+                }
+            }
+        }
+        & .stash-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        & .stash-list {
+            background-color: #304170;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+    & #stash-transfer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #3c5a95;
+        border-radius: 10px;
+        border: 2px solid #adedf922;
+        filter: drop-shadow(0 0 10px  #3c5a95);
+        padding: 10px;
+        overflow-y: scroll;
+        & button {
+            cursor: pointer;
+            border-radius: 10px;
+            &:active {
+                filter: brightness(.6);
+            }
+            & img {
+                border-radius: 5px;
+                border: solid 1px #3c5a95;
+                &:hover {
+                    border: solid 1px #ebcf9b;
+                }
+            }
+        }
+        & .stash-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            & ol {
+                background-color: #adedf9;
+                border-radius: 5px;
+                list-style: none;
+                color: #304170;
+                font-size: 12px;
+            }
+            & li {
+                padding: 5px;
+            }
+        }
+        & .stash-list {
+            background-color: #304170;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .stash-trans {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            & button:first-child {
+                background-color: brown;
+                color: #adedf9;
+                padding: 5px 10px;
+            }
+            & button:last-child {
+                background-color: green;
+                color: #adedf9;
+                padding: 5px 10px;
+            }
+            & button:hover {
+                filter: brightness(1.2);
+                transition: filter .3s linear;
+            }
+            & button:active {
+                filter: brightness(.8);
+                transition: filter .1s linear;
+            }
         }
     }
 }
@@ -1228,9 +1340,11 @@ header {
             gap: 5px;
             padding: 10px;
             border-radius: 10px;
-            background-color: #253358;
+            background-color: #304170;
             &:hover {
                 color: #ebcf9b;
+                background-color: #253358;
+                transition: all .3s linear;
                 & img {
                     filter: opacity(.5);
                     transition: filter .1s linear;
