@@ -195,6 +195,7 @@ footer {
 
 .lang {
     position: relative;
+    z-index: 9;
     color: #f1f1f1;
     width: 130px;
 
@@ -1115,16 +1116,9 @@ header {
 
 #account {
     display: flex;
-    gap: 40px;
     width: 1440px;
     margin: 40px auto;
-    background-color: #304170c2;
     color: #f1f1f1;
-    border-radius: 10px;
-    padding: 10px;
-    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
     & u {
         text-decoration: underline;
     }
@@ -1150,25 +1144,6 @@ header {
             &:active {
                 filter: brightness(.6);
             }
-        }
-    }
-    & aside {
-        padding: 10px;
-        border-left: 1px solid #25325e;
-        overflow: scroll;
-        width: 100%;
-        height: 100vh;
-        & input, .acc-info, .acc-voting, .acc-shop, .acc-rewards, .acc-stash, .acc-stash, .acc-pvp, .acc-donation, .acc-journal {
-            display: none;
-            flex-direction: column;
-            gap: 10px;
-        }
-        & hr {
-            border: 1px solid #adedf922;
-            width: 100%;
-        }
-        & span {
-            color: #adedf9;
         }
     }
     & input#info:checked ~ .acc-info {
@@ -1199,11 +1174,41 @@ header {
 
 .account {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     width: 100%;
-    background-color: #3c5a95;
+    /* background-color: #3c5a95; */
     padding: 10px;
     border-radius: 10px;
+    & nav {
+        background-color: #3c5a95;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #adedf922;
+        filter: drop-shadow(0 0 10px  #3c5a95);
+        height: max-content;
+    }
+    & aside {
+        background-color: #3c5a95;
+        border-radius: 10px;
+        border: 2px solid #adedf922;
+        filter: drop-shadow(0 0 10px  #3c5a95);
+        padding: 10px;
+        overflow: scroll;
+        width: 100%;
+        height: 100vh;
+        & input, .acc-info, .acc-voting, .acc-shop, .acc-rewards, .acc-stash, .acc-stash, .acc-pvp, .acc-donation, .acc-journal {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+        }
+        & hr {
+            border: 1px solid #adedf922;
+            width: 100%;
+        }
+        & span {
+            color: #adedf9;
+        }
+    }
 }
 .acc-info {
     & #acc-online {
@@ -1429,7 +1434,8 @@ header {
             background-color: #5389de;
             color: white;
             &:focus {
-                outline: solid 1px #ebcf9b;
+                outline: none;
+                border-bottom: solid 2px #ebcf9b;
             }
             &::placeholder {
                 color: white;
