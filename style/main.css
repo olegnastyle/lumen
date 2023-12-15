@@ -90,6 +90,16 @@
     }
 }
 
+@keyframes hoverRewards {
+    0% {
+        border-bottom: solid 1px #ebcf9b00;
+    }
+
+    100% {
+        border-bottom: solid 1px #ebcf9b;
+    }
+}
+
 a {
     color: #f1f1f1;
 }
@@ -1114,6 +1124,8 @@ header {
     }
 }
 
+/* Account */
+
 #account {
     display: flex;
     width: 1440px;
@@ -1495,6 +1507,12 @@ header {
         background-color: #304170;
         padding: 10px;
         border-radius: 5px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
     & label {
         display: flex;
@@ -1517,7 +1535,7 @@ header {
             color: #ebcf9b;
             transition: all .1s linear;
             &::after {
-                border-bottom: solid 1px #ebcf9b;
+                animation: hoverRewards .5s linear forwards;
             }
         }
     }
