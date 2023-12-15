@@ -1056,15 +1056,31 @@
                         <hr>
                         <h3>Вознаграждения</h3>
                         <div class="rewards-nav">
-                            <label for="">ONLINE_TIME</label>
-                            <label for="">LEVEL</label>
-                            <label for="" style="cursor: not-allowed;">INFAMY</label>
-                            <label for="" style="cursor: not-allowed;">VOTES</label>
-                            <label for="" style="cursor: not-allowed;">REFERRAL</label>
-                            <label for="" style="cursor: not-allowed;">MISC</label>
+                            <label for="online-time" class="online-cheked">ONLINE_TIME</label>
+                            <label for="level" class="level-cheked">LEVEL</label>
+                            <label for="infamy" class="infamy-cheked disabled">INFAMY</label>
+                            <label for="votes" class="votes-cheked disabled" >VOTES</label>
+                            <label for="referral" class="referral-cheked disabled">REFERRAL</label>
+                            <label for="misc" class="misc-cheked disabled">MISC</label>
                         </div>
                         <hr>
+                        <input type="radio" name="rewards" id="online-time">
+                        <div class="online-time">ONLINE_TIME</div>
 
+                        <input type="radio" name="rewards" id="level">
+                        <div class="level">LEVEL</div>
+
+                        <input type="radio" name="rewards" id="infamy">
+                        <div class="infamy">В разделе INFAMY пусто.</div>
+
+                        <input type="radio" name="rewards" id="votes">
+                        <div class="votes">В разделе VOTES пусто.</div>
+
+                        <input type="radio" name="rewards" id="referral">
+                        <div class="referral">В разделе REFERRAL пусто.</div>
+
+                        <input type="radio" name="rewards" id="misc">
+                        <div class="misc">В разделе MISC пусто.</div>
                     </div>
                     <input type="radio" id="characters" name="account">
                     <div class="acc-characters">
@@ -1188,6 +1204,7 @@
                     color: #ebcf9b;
                     transition: all .1s linear;`
         const shopChecked = 'color: #ebcf9b;font-weight: bold;'
+        const rewardsChecked = '--rewards-checked: #ebcf9b;'
         // nav
         const info = document.querySelector('.checked-info')
         const voting = document.querySelector('.checked-voting')
@@ -1219,7 +1236,13 @@
         const materialFashion = document.querySelector('.material-fashion')
         // functional
         const functionalFunction = document.querySelector('.functional-function')
-
+        //rewards
+        const onlineTime = document.querySelector('.online-cheked')
+        const level = document.querySelector('.level-cheked')
+        const infamy = document.querySelector('.infamy-cheked')
+        const votes = document.querySelector('.votes-cheked')
+        const referral = document.querySelector('.referral-cheked')
+        const misc = document.querySelector('.misc-cheked')
 
         window.addEventListener('change', function validate() {
             // nav
@@ -1253,6 +1276,13 @@
             document.getElementById('material-fashion').checked ? materialFashion.style = shopChecked : materialFashion.style = ''
             // function
             document.getElementById('functional-function').checked ? functionalFunction.style = shopChecked : functionalFunction.style = ''
+            // rewards
+            document.getElementById('online-time').checked ? onlineTime.style = rewardsChecked : onlineTime.style = ''
+            document.getElementById('level').checked ? level.style = rewardsChecked : level.style = ''
+            document.getElementById('infamy').checked ? infamy.style = rewardsChecked : infamy.style = ''
+            document.getElementById('votes').checked ? votes.style = rewardsChecked : votes.style = ''
+            document.getElementById('referral').checked ? referral.style = rewardsChecked : referral.style = ''
+            document.getElementById('misc').checked ? misc.style = rewardsChecked : misc.style = ''
         })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

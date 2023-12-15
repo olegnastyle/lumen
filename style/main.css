@@ -1,3 +1,7 @@
+:root {
+    --rewards-checked: #304170;
+}
+
 ::-webkit-scrollbar {
     background-color: #486bb1;
     width: 15px;
@@ -1513,6 +1517,10 @@ header {
         &::-webkit-scrollbar {
             display: none;
         }
+        & .disabled {
+            cursor: not-allowed;
+            opacity: .4;
+        }
     }
     & label {
         display: flex;
@@ -1526,7 +1534,7 @@ header {
             content: '';
             position: relative;
             top: 10px;
-            border-bottom: solid 1px #304170;
+            border-bottom: solid 1px var(--rewards-checked);
             display: block;
             height: 1px;
             width: 120px;
@@ -1539,6 +1547,13 @@ header {
             }
         }
     }
+    & input[type="radio"], .online-time, .level, .infamy, .votes, .referral, .misc {display: none;}
+    & input#online-time:checked ~ .online-time {display: flex;}
+    & input#level:checked ~ .level {display: flex;}
+    & input#infamy:checked ~ .infamy {display: flex;}
+    & input#votes:checked ~ .votes {display: flex;}
+    & input#referral:checked ~ .referral {display: flex;}
+    & input#misc:checked ~ .misc {display: flex;}
 }
 
 .acc-characters {
