@@ -113,7 +113,7 @@
                     <label for="voting" class="checked-voting">Голосование</label>
                     <label for="shop" class="checked-shop">Магазин</label>
                     <label for="rewards" class="checked-rewards">Вознаграждения</label>
-                    <label for="stash" class="checked-stash">Тайник</label>
+                    <label for="characters" class="checked-characters">Персонажи</label>
                     <label for="pvp" class="checked-pvp">PvP-события</label>
                     <label for="donation" class="checked-donation">Пожертвование</label>
                     <label for="journal" class="checked-journal">Журналы</label>
@@ -1066,11 +1066,12 @@
                         <hr>
 
                     </div>
-                    <input type="radio" id="stash" name="account">
-                    <div class="acc-stash">
+                    <input type="radio" id="characters" name="account">
+                    <div class="acc-characters">
                         <p>Welcome, <span>admin</span>! You have <span>100`000</span> Lumens.</p>
                         <hr>
-                        <h3>Тайник</h3>
+                        <h3>Песрсонажи</h3>
+                        
                     </div>
 
                     <input type="radio" id="pvp" name="account">
@@ -1184,7 +1185,7 @@
         const voting = document.querySelector('.checked-voting')
         const shop = document.querySelector('.checked-shop')
         const rewards = document.querySelector('.checked-rewards')
-        const stash = document.querySelector('.checked-stash')
+        const characters = document.querySelector('.checked-characters')
         const pvp = document.querySelector('.checked-pvp')
         const donation = document.querySelector('.checked-donation')
         const journal = document.querySelector('.checked-journal')
@@ -1218,7 +1219,7 @@
             document.getElementById('voting').checked ? voting.style = navChecked : voting.style = ''
             document.getElementById('shop').checked ? shop.style = navChecked : shop.style = ''
             document.getElementById('rewards').checked ? rewards.style = navChecked : rewards.style = ''
-            document.getElementById('stash').checked ? stash.style = navChecked : stash.style = ''
+            document.getElementById('characters').checked ? characters.style = navChecked : characters.style = ''
             document.getElementById('pvp').checked ? pvp.style = navChecked : pvp.style = ''
             document.getElementById('donation').checked ? donation.style = navChecked : donation.style = ''
             document.getElementById('journal').checked ? journal.style = navChecked : journal.style = ''
