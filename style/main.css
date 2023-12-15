@@ -1490,16 +1490,35 @@ header {
 }
 
 .acc-rewards {
-    & nav {
+    & .rewards-nav {
         display: flex;
-        gap: 10px;
+        background-color: #304170;
+        padding: 10px;
+        border-radius: 5px;
     }
     & label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         color: #adedf9;
         cursor: pointer;
+        width: 120px;
+        &::after {
+            content: '';
+            position: relative;
+            top: 10px;
+            border-bottom: solid 1px #304170;
+            display: block;
+            height: 1px;
+            width: 120px;
+        }
         &:hover {
             color: #ebcf9b;
             transition: all .1s linear;
+            &::after {
+                border-bottom: solid 1px #ebcf9b;
+            }
         }
     }
 }
