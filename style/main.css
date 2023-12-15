@@ -104,6 +104,16 @@
     }
 }
 
+@keyframes hoverItem {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 a {
     color: #f1f1f1;
 }
@@ -130,6 +140,10 @@ h4 {
 
 .row {
     display: flex;
+}
+
+.g5 {
+    gap: 5px;
 }
 
 .g10 {
@@ -1231,7 +1245,7 @@ header {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 410px;
+        width: 380px;
         height: max-content;
     }
     & #stash {
@@ -1552,6 +1566,101 @@ header {
     & input#votes:checked ~ .votes {display: flex;}
     & input#referral:checked ~ .referral {display: flex;}
     & input#misc:checked ~ .misc {display: flex;}
+    & .online-time {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        & .online-item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            background-color: #304170;
+            border: solid 1px #304170;
+            border-radius: 10px;
+            padding: 10px;
+            width: 240px;
+            -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            &:nth-child(1) {animation: hoverItem .10s linear 1;}
+            &:nth-child(2) {animation: hoverItem .20s linear 1;}
+            &:nth-child(3) {animation: hoverItem .30s linear 1;}
+            &:nth-child(4) {animation: hoverItem .40s linear 1;}
+            &:nth-child(5) {animation: hoverItem .50s linear 1;}
+            &:nth-child(6) {animation: hoverItem .60s linear 1;}
+            &:nth-child(7) {animation: hoverItem .70s linear 1;}
+            &:nth-child(8) {animation: hoverItem .80s linear 1;}
+            &:nth-child(9) {animation: hoverItem .90s linear 1;}
+            &:nth-child(10) {animation: hoverItem 1s linear 1;}
+            &:nth-child(11) {animation: hoverItem 1.10s linear 1;}
+            &:nth-child(12) {animation: hoverItem 1.20s linear 1;}
+            &:nth-child(13) {animation: hoverItem 1.30s linear 1;}
+            &:last-child {
+                
+            }
+            &:hover {
+                border: solid 1px #ebcf9b;
+                
+                -webkit-box-shadow: 0px 5px 10px 2px #ebcf9b33 inset;
+                -moz-box-shadow: 0px 5px 10px 2px #ebcf9b33 inset;
+                box-shadow: 0px 5px 10px 2px #ebcf9b33 inset;
+            }
+            &:active {
+                -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+                -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+                box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+                transition: all .1s linear;
+            }
+            & .description {
+                display: none;
+                flex-direction: column;
+                padding: 10px;
+                background-color: #1a182d;
+                border-radius: 10px;
+                width: inherit;
+                position: absolute;
+                z-index: 99999;
+                margin-top: 40px;
+                & p {
+                    font-size: 14px;
+                }
+                & h4, p, span {
+                    text-wrap: balance;
+                }
+            }
+            & img {
+                border-radius: 5px;
+                &:hover ~ .description {
+                    display: flex;
+                }
+            }
+            & #item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+                font-size: 12px;
+            }
+            & button {
+                color: #ebcf9b;
+                background-color: #3c5a95;
+                border: solid 1px #ebcf9b;
+                padding: 5px;
+                border-radius: 10px;
+                cursor: pointer;
+                &:hover {
+                    color: black;
+                    background-color: #adedf9;
+                    border: solid 1px #adedf9;
+                    transition: all .1s linear;
+                }
+                &:active {
+                    filter: brightness(.8);
+                }
+            }
+        }
+    }
 }
 
 .acc-characters {
