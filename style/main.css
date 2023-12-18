@@ -1689,7 +1689,47 @@ header {
 }
 
 .acc-characters {
-
+    & .rewards-nav {
+        display: flex;
+        background-color: #304170;
+        padding: 10px;
+        border-radius: 5px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        & .disabled {
+            cursor: not-allowed;
+            opacity: .4;
+        }
+    }
+    & label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #adedf9;
+        cursor: pointer;
+        width: 120px;
+        &::after {
+            content: '';
+            position: relative;
+            top: 10px;
+            border-bottom: solid 1px var(--rewards-checked);
+            display: block;
+            height: 1px;
+            width: 120px;
+        }
+        &:hover {
+            color: #ebcf9b;
+            transition: all .1s linear;
+            &::after {
+                animation: hoverRewards .5s linear forwards;
+            }
+        }
+    }
 }
 
 /* Auth */
