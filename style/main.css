@@ -1713,6 +1713,7 @@ header {
             opacity: .4;
         }
         & select {
+            cursor: pointer;
             width: min-content;
             padding: 5px;
             color: #adedf9;
@@ -1815,6 +1816,27 @@ header {
     & input#stock-input:checked ~ .stock {display: flex;}
     & input#cache-input:checked ~ .cache {display: flex;}
     & .stock {
+        flex-direction: column;
+        gap: 20px;
+        & p {
+            display: flex;
+            justify-content: end;
+        }
+        & button {
+            cursor: pointer;
+            border-radius: 5px;
+            border: solid 1px #304170;
+            background: rgb(73,75,72);
+            background: linear-gradient(180deg, rgba(73,75,72,1) 20%, rgba(28,28,28,1) 60%, rgba(0,1,3,1) 100%);
+            -webkit-box-shadow: 0px 5px 10px 2px rgb(0, 0, 0) inset;
+            -moz-box-shadow: 0px 5px 10px 2px rgb(0, 0, 0) inset;
+            box-shadow: 0px 5px 10px 2px rgb(0, 0, 0) inset;
+            width: 38px;
+            height: 38px;
+        }
+    }
+
+    & .cache {
         flex-direction: column;
         gap: 20px;
         & p {
