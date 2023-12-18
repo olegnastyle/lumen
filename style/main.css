@@ -1858,6 +1858,34 @@ header {
     }
 }
 
+.acc-pvp {
+    & .pvp-event {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #304170;
+        border-radius: 10px;
+        padding: 10px;
+        & button {
+            background-color: #3c5a95;
+            border: solid 1px #3c5a95;
+            border-radius: 10px;
+            padding: 10px;
+            color: #adedf9;
+            cursor: pointer;
+            width: 20%;
+            &:hover {
+                border: solid 1px #ebcf9b;
+                
+                transition: all .3s linear;
+            }
+            &:active {
+                background-color: #007aff;
+            }
+        }
+    }
+}
+
 /* Auth */
 
 #auth-nav {
