@@ -1774,8 +1774,8 @@ header {
             &:nth-child(18) {top: 130px;left: -300px;}
             &:nth-child(19) {top: 80px;left: -340px;}
             &:nth-child(20) {top: -10px;left: 390px;}
-            &:nth-child(21) {top: -40px;left: 150px;}
-            &:nth-child(22) {top: -40px;left: 170px;}
+            &:nth-child(21) {top: -40px;left: 140px;}
+            &:nth-child(22) {top: -40px;left: 160px;}
             &:nth-child(23) {top: -40px;left: 180px;}
             & img {
                 border-radius: 6px;
