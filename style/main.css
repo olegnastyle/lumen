@@ -1813,17 +1813,10 @@ header {
     & input#stock-input:checked ~ .stock {display: flex;}
     & input#cache-input:checked ~ .cache {display: flex;}
     & .stock {
-        display: flex;
         flex-direction: column;
         gap: 20px;
         & label {
             border: none !important;
-        }
-        & progress {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
         }
         & button {
             cursor: pointer;
