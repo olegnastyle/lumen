@@ -1,5 +1,7 @@
 :root {
     --rewards-checked: #304170;
+
+    --progress: 20;
 }
 
 ::-webkit-scrollbar {
@@ -1815,8 +1817,9 @@ header {
     & .stock {
         flex-direction: column;
         gap: 20px;
-        & label {
-            border: none !important;
+        & p {
+            display: flex;
+            justify-content: end;
         }
         & button {
             cursor: pointer;
