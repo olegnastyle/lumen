@@ -205,9 +205,10 @@ header {
         color: #253358;
         font-weight: bold;
         letter-spacing: 1px;
-        font-size: 16px;
+        font-size: 12px;
         text-transform: uppercase;
-    
+        position: relative;
+        z-index: 9999;
         &:hover {
             filter: brightness(1.5);
             transition: filter .3s ease;
@@ -1832,4 +1833,39 @@ header {
             transition: all .3s linear;
         }
     }
+}
+
+
+/* Login - MultiAccount */
+
+#multiaccount {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #304170;
+    border-radius: 0 0 10px 10px;
+    width: max-content;
+    height: max-content;
+    margin-left: 80px;
+    position: absolute;
+    z-index: 999;
+    transform: translateY(-500px);
+    filter: drop-shadow(0 0 10px #3c5a95);
+    & a {
+        padding: 10px 25px;
+        width: 100%;
+        &:hover {
+            background-color: #3c5a95;
+            color: #adedf9;
+            &:last-child {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+    }
+
+}
+
+#login:hover #multiaccount {
+    transform: translateY(0);
+    transition: all .3s linear;
 }
