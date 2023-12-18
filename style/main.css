@@ -1747,6 +1747,13 @@ header {
     & .char-person {
         & button {
             position: relative;
+            cursor: pointer;
+            &:hover {
+                filter: brightness(.8);
+            }
+            &:active {
+                filter: brightness(.4);
+            }
             &:nth-child(1) {top: 30px;left: 100px;}
             &:nth-child(2) {top: 80px;left: 60px;}
             &:nth-child(3) {top: 120px;left: 20px;}
