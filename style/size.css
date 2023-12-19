@@ -232,7 +232,7 @@
         flex-direction: column;
     }
 
-    #auth {zoom: 60%;}
+    #auth {zoom: 80%;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
