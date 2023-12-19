@@ -1879,7 +1879,7 @@ header {
             padding: 10px;
             color: #adedf9;
             cursor: pointer;
-            width: 20%;
+            width: 100%;
             &:hover {
                 border: solid 1px #ebcf9b;
                 
