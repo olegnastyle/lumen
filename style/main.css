@@ -1860,7 +1860,8 @@ header {
 
 .acc-pvp {
     & .disable {
-        background-color: #30417059 !important;
+        background-color: #5389de !important;
+        color: #adedf9;
     }
     & .pvp-event {
         display: flex;
@@ -1869,6 +1870,10 @@ header {
         background-color: #304170;
         border-radius: 10px;
         padding: 10px;
+        border: solid 1px #304170;
+        &:hover {
+            border: solid 1px #ebcf9b;
+        }
         & button {
             background-color: #3c5a95;
             border: solid 1px #3c5a95;
