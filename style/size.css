@@ -159,6 +159,10 @@
         & img {
             zoom: 50%;
         }
+
+        &::before{
+            top: none;
+        }
     }
 
     .swiper {
