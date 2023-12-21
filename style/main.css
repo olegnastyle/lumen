@@ -709,9 +709,9 @@ header {
         position: absolute;
         top: 0;
     }
-    /* @media screen and (min-width: 320px) and (max-width: 767px) {
-        &::before {margin-left: 250px;}
-    } */
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        &::before {display: none;}
+    }
 }
 
 #item-action {

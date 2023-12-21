@@ -159,11 +159,6 @@
         & img {
             zoom: 50%;
         }
-
-        &::before{
-            top: 1px;
-            right: 10px;
-        }
     }
 
     .swiper {
