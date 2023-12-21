@@ -161,7 +161,8 @@
         }
 
         &::before{
-            top: none;
+            top: 1px;
+            right: 10px;
         }
     }
 
