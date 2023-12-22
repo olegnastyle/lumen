@@ -1521,6 +1521,8 @@ footer {
         }
     }
 
+    & .shop-prev,.shop-next {background-color: #304170;border-radius: 10px; padding: 10px;}
+
     & .shop-next label {
         font-size: 14px;
     }
