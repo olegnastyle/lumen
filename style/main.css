@@ -975,8 +975,8 @@ header {
         height: 50px;
 
     }
-    & select {color: white;}
-    & option {color: #1e2947;padding: 10px;height: 10px;}
+    & select {color: white;font-size: 14px;}
+    & option {color: #1e2947;padding: 10px;}
     & a, select {
         padding: 10px 20px;
         border: solid 1px #1e2947;
