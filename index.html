@@ -57,8 +57,13 @@
             <input type="password" name="auth" placeholder="Пароль">
             <label><input type="checkbox" name="auth" id="checked"> Запомнить меня</label>
             <input type="submit" name="auth" value="Войти">
-            <a href="#">Забыл пароль?</a>
-            <a href="account.html">посмотреть личный кабинет</a>
+            <a href="#" onclick="passHelpFlex()">Забыл пароль?</a>
+            <a href="account.html" style="color:aqua;">посмотреть личный кабинет</a>
+        </div>
+        <div class="pass" style="display: none;">
+            <h2>Восстановить пароль</h2>
+            <input type="email" name="pass" id="pass" placeholder="E-mail">
+            <input type="submit" name="pass" value="Восставноить" onclick="passHelpRevers()">
         </div>
     </section>
     <header>

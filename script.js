@@ -72,3 +72,14 @@ function eventPageClose(){
 function eventPageFlex(){
     document.querySelector(".event-page").style.display = 'flex';
 }
+
+function passHelpFlex(){
+    document.querySelector(".auth").style.display = 'none';
+    document.querySelector(".pass").style.display = 'flex';
+}
+
+
+function passHelpRevers(){
+    document.querySelector(".auth").style.display = 'flex';
+    document.querySelector(".pass").style.display = 'none';
+}
