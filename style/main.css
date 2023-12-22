@@ -2175,7 +2175,7 @@ header {
         border-radius: 10px;
         padding: 10px;
         border: solid 1px #304170;
-        overflow-y: auto;
+        
         &:hover {
             border: solid 1px #ebcf9b;
         }
@@ -2205,12 +2205,10 @@ header {
         display: none;
         flex-direction: column;
         gap: 10px;
-        height: 100%;
-        width: 100%;
         background-color: #304170;
         border-radius: 10px;
-        position: absolute;
-        padding: 10px;
+        padding: 20px 10px;
+        overflow-y: auto;
     }
     & table {cursor: default;}
     & tbody {
