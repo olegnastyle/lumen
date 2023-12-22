@@ -2330,7 +2330,37 @@ header {
     }
 }
 
-.acc-journal {}
+.acc-journal {
+    & .nav, .nav-kills {
+        display: flex;
+        gap: 20px;
+        background-color: #304170;
+        border-radius: 10px;
+        padding: 10px;
+        & a {
+            display: flex;
+            flex-direction: column;
+            &::after {
+                content: '';
+                border-bottom: solid 1px #ebcf9b;
+                max-width: 0;
+                position: relative;
+                top: 10px;
+            }
+            &:hover{
+                color: #ebcf9b;
+                &::after {
+                    max-width: 100%;
+                    transition: all .2s linear;
+                }
+            }
+            &:active{filter: brightness(.8);}
+        }
+    }
+
+    & .nav {font-size: 14px;}
+    & .nav-kills {font-size: 12px;}
+}
 
 
 /* Auth */
