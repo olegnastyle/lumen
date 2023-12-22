@@ -64,3 +64,11 @@ function authActive(){
 function authClose(){
     document.getElementById("auth").style.transform = 'scale(0)';
 }
+
+function eventPageClose(){
+    document.querySelector(".event-page").style.display = 'none';
+}
+
+function eventPageFlex(){
+    document.querySelector(".event-page").style.display = 'flex';
+}
