@@ -1976,7 +1976,6 @@ footer {
         & select {
             cursor: pointer;
             width: min-content;
-            padding: 5px;
             color: #adedf9;
             transition: all .3s linear;
 
@@ -1998,7 +1997,7 @@ footer {
         &::after {
             content: '';
             position: relative;
-            top: 13px;
+            top: 10px;
             border-bottom: solid 1px var(--rewards-checked);
             display: block;
             height: 1px;
