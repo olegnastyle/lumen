@@ -50,6 +50,23 @@
             </ul>
         </div>
     </section>
+    <section id="auth">
+        <button onclick="authClose()" class="auth-close">×</button>
+        <div class="auth">
+            <h2>Авторизация</h2>
+            <input type="text" name="auth" placeholder="Логин">
+            <input type="password" name="auth" placeholder="Пароль">
+            <label><input type="checkbox" name="auth" id="checked"> Запомнить меня</label>
+            <input type="submit" name="auth" value="Войти">
+            <a href="#" onclick="passHelpFlex()">Забыл пароль?</a>
+            <a href="account.html" style="color:aqua;">посмотреть личный кабинет</a>
+        </div>
+        <div class="pass" style="display: none;">
+            <h2>Восстановить пароль</h2>
+            <input type="email" name="pass" id="pass" placeholder="E-mail">
+            <input type="submit" name="pass" value="Восставноить" onclick="passHelpRevers()">
+        </div>
+    </section>
     <header>
         <aside class="lang">
             <input type="checkbox" id="menu">
@@ -72,9 +89,9 @@
             <a href="#download">Скачать</a>
             <a href="gaid.html">Гайды</a>
             <a href="patch.html">Обновления</a>
-            <a href="#rules" onclick="rulesFlex()">Правила на сервере</a>
+            <a href="#" onclick="rulesFlex()">Правила на сервере</a>
         </nav>
-        <a href="account.html" class="login"><span>Login</span></a>
+        <a onclick="authActive()" class="login"><span>Login</span></a>
     </header>
     <header id="nav-mobile">
         <aside class="lang">
