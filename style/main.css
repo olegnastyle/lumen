@@ -2253,6 +2253,51 @@ header {
             &:active{filter: brightness(.8);}
         }
     }
+    
+    & .description {
+        display: none;
+        flex-direction: column;
+        padding: 10px;
+        background-color: #1a182d;
+        border-radius: 10px;
+        width: fit-content;
+        min-width: 240px;
+        position: absolute;
+        z-index: 99999;
+        margin-top: 40px;
+        margin-left: 260px;
+        & p {
+            font-size: 14px;
+        }
+
+        & h4,
+        p,
+        span {
+            text-wrap: balance;
+        }
+    }
+
+    & h4 {
+        text-wrap: balance;
+    }
+
+    & img {
+        border-radius: 5px;
+
+        &:hover~.description {
+            display: flex;
+        }
+    }
+
+    & #item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        font-size: 12px;
+    }
+
+   
 }
 
 .acc-donation {
