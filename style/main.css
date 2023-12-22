@@ -975,8 +975,11 @@ header {
         height: 50px;
 
     }
-    & a {
+    & select {color: white;}
+    & option {color: #1e2947;padding: 10px;height: 10px;}
+    & a, select {
         padding: 10px 20px;
+        border: solid 1px #1e2947;
         &:hover {
             color: #adedf9;
             border: solid 1px #adedf9;
