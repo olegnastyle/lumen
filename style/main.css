@@ -1082,13 +1082,13 @@ footer {
         border-collapse: collapse;
 
         & a {
-            text-decoration: underline;
+            text-decoration: none;
         }
     }
 
     & thead {
         & tr {
-            background-color: #2d334b !important;
+            background-color: #304170 !important;
             color: #adedf9 !important;
         }
 
@@ -1114,22 +1114,19 @@ footer {
 
         & tr {
             &:hover {
-                filter: invert(.1);
+                background-color: #304170 !important;
                 color: #ebcf9b;
                 transition: all .1s linear;
-
-                & a:hover {
-                    color: #ebcf9b;
-                }
+                & a{color: #ebcf9b;text-decoration: underline;}
             }
         }
 
         & tr:nth-child(1n) {
-            background-color: #1a182d;
+            background-color: #486bb1;
         }
 
         & tr:nth-child(2n) {
-            background-color: #202136;
+            background-color: #5389de;
         }
     }
 
