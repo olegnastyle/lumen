@@ -618,6 +618,7 @@ footer {
         padding: 9px;
         width: 180px;
         background-color: #486bb1;
+        border: solid 1px #486bb1;
         color: #adedf9;
         border-radius: 5px;
 
@@ -625,6 +626,7 @@ footer {
             filter: brightness(1.2);
             transition: all .3s linear;
             color: #ebcf9b;
+            border: solid 1px #ebcf9b;
         }
 
         &:active {
