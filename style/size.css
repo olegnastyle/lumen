@@ -233,6 +233,11 @@
     }
 
     #auth {zoom: 100%;}
+
+    .share {
+        position: relative;
+        top: 0;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
