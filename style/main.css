@@ -466,7 +466,6 @@ footer {
     grid-column-gap: 10px;
     grid-row-gap: 0px;
     position: relative;
-    top: 120px;
     animation: hoverItem 1s linear 1;
 
     & ol {
@@ -500,22 +499,6 @@ footer {
         width: 100%;
         padding: 10px;
         &:hover {background-color: #3c5a95;transition: all .1s linear;}
-    }
-
-    &::before {
-        content: '';
-        background-image: url(../style/img/decore.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: relative;
-        top: 10rem;
-        right: 18rem;
-        z-index: 2;
-        display: block;
-        width: 150px;
-        height: 150px;
-        filter: brightness(1);
-        animation: animalFire 5s linear infinite;
     }
 
     & iframe {
@@ -553,6 +536,22 @@ footer {
 
 .twitch {
     grid-area: 1 / 2 / 2 / 3;
+    position: relative;
+    &::before {
+        content: '';
+        background-image: url(../style/img/decore.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -80px;
+        left: -40px;
+        z-index: 2;
+        display: block;
+        width: 150px;
+        height: 150px;
+        filter: brightness(1);
+        animation: animalFire 5s linear infinite;
+    }
 }
 
 .online-register {
@@ -566,6 +565,10 @@ footer {
     padding: 10px;
     &:hover {border: solid 5px #ebcf9b;transition: all .5s linear;}
     & h3 {text-align: center;color: #adedf9;}
+}
+
+@media screen and (min-width:0px) and (max-width:1279px) {
+    .event-panel, .online-register {display: none;}
 }
 
 /* Download */
