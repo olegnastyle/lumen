@@ -568,7 +568,10 @@ footer {
 }
 
 @media screen and (min-width:0px) and (max-width:1279px) {
-    .event-panel, .online-register {display: none;}
+    #twitch {grid-column-gap: 0;grid-row-gap: 10px;}
+    .event-panel {grid-area: 1 / 1 / 2 / 2;}
+    .twitch {grid-area: 2 / 1 / 3 / 2;}
+    .online-register {grid-area: 3 / 1 / 4 / 2;}
 }
 
 /* Download */
