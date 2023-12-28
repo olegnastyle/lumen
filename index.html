@@ -130,25 +130,60 @@
             <img src="./style/img/bg-online.png" alt="">
             <h3><span>520</span>online</h3>
         </div>
-        <div class="twitch">
-            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-            <div id="twitch-embed"></div>
-            <script type="text/javascript">
-                const screenWidth = window.screen.width
-                const screenHeight = window.screen.height
-                let width = screenWidth <= 768 ? 310 : 620
-                let height = screenWidth <= 768 ? 179 : 354
-                let options = {
-                    width: width,
-                    height: height,
-                    channel: "jadedynastylumen",
-                    parent: ["embed.example.com", "othersite.example.com"],
-                    autoplay: true,
-                    audio: true,
-                }
-                let player = new Twitch.Player("twitch-embed", options);
-                player.setVolume(1);
-            </script>
+        <div id="twitch">
+            <div class="event-panel">
+                <h3>Список PVP-ивентов</h3>
+                <ol>
+                    <li><a href="#">[Asc.] Grandmaster - FFA 30 ~ 134 - Skysong R11</a></li>
+                    <li><a href="#">[Unasc.] Grandmaster - FFA 30 ~ 134 - Skysong R12</a></li>
+                    <li><a href="#">[Unasc.] Grandmaster - FFA 135 ~ 150 - Kunlun R12</a></li>
+                    <li><a href="#">[SUB] [Asc.] Grandmaster - FFA 30 ~ 134 - Skysong R11</a></li>
+                    <li><a href="#">[SUB] [Unasc.] Grandmaster - FFA 135 ~ 150 - Kunlun R12</a></li>
+                    <li><a href="#">[SUB] [Asc.] Grandmaster - FFA 135 ~ 150 - Kunlun R11</a></li>
+                    <li><a href="#">[SUB] [Unasc.] Grandmaster - FFA 30 ~ 134 - Skysong R12</a></li>
+                </ol>
+            </div>
+            <div class="twitch">
+                <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+                <div id="twitch-embed"></div>
+                <script type="text/javascript">
+                    const screenWidth = window.screen.width
+                    const screenHeight = window.screen.height
+                    let width = screenWidth <= 768 ? 310 : 620
+                    let height = screenWidth <= 768 ? 179 : 354
+                    let options = {
+                        width: width,
+                        height: height,
+                        channel: "jadedynastylumen",
+                        parent: ["embed.example.com", "othersite.example.com"],
+                        autoplay: true,
+                        audio: true,
+                    }
+                    let player = new Twitch.Player("twitch-embed", options);
+                    player.setVolume(1);
+                </script>
+            </div>
+            <div class="online-register">
+                <h3>Игроки онлайн</h3>
+                <ul>
+                    <li>admin</li>
+                    <li>ponchik</li>
+                    <li>master</li>
+                    <li>user321</li>
+                    <li>user932</li>
+                    <li>admin</li>
+                    <li>ponchik</li>
+                    <li>master</li>
+                    <li>user321</li>
+                    <li>user932</li>
+                    <li>admin</li>
+                    <li>ponchik</li>
+                    <li>master</li>
+                    <li>user321</li>
+                    <li>user932</li>
+
+                </ul>
+            </div>
         </div>
         <div id="download">
             <h2>Скачать клиент</h2>
