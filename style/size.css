@@ -251,6 +251,10 @@
         width: 740px;
     }
 
+    header nav a::before {
+        bottom: 15px;
+    }
+
     .lang {
         zoom: 80%;
         margin-top: 10px;
@@ -448,3 +452,4 @@
         width: 1280px;
     }
 }
+

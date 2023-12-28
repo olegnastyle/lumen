@@ -237,7 +237,8 @@ header {
 
             &:hover {
                 color: #ebcf9b;
-                transition: color .2s ease;
+                transform: scale(1.1);
+                transition: all .2s ease;
             }
 
             &:active {
@@ -254,7 +255,7 @@ header {
             max-width: 0;
             border: solid 2px #adedf9;
             position: relative;
-            bottom: 30px;
+            bottom: 26px;
         }
 
         & a:hover:before {
