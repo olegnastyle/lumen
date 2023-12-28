@@ -472,19 +472,7 @@ footer {
         display: flex;
         flex-direction: column-reverse;
         list-style-position: inside;
-    }
-
-        & ul {
-            list-style: none;
-            & li:first-child {
-                border-radius: 10px 10px 0 0;
-            }
-            & li:last-child {
-                border-radius: 0 0 10px 10px;
-            }
-        }
-
-    & ul, ol {
+        cursor: default;
         overflow: auto;
         height: 280px;
         border-radius: 10px;
