@@ -352,6 +352,14 @@
     #hof, #patch, #account {
         width: 740px;
     }
+
+    footer {
+        height: 320px;
+    }
+
+    .pay {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
