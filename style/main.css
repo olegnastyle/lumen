@@ -864,6 +864,7 @@ footer {
 .foot-center {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .copy {
@@ -882,7 +883,8 @@ footer {
 .share {
     display: flex;
     gap: 10px;
-
+    position: absolute;
+    top: 110px;
     & img {
         display: block;
         width: 40px;
