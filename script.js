@@ -93,3 +93,9 @@ function registFlexRevers(){ // при нажатии Регистрация, в
     document.querySelector(".auth").style.display = 'flex';
     document.querySelector(".regist").style.display = 'none';
 }
+
+async function checkedEvent(){
+    document.getElementById('pvp').checked = 'checked'
+}
+
+ 

@@ -486,7 +486,13 @@ footer {
         color: #adedf9;
         width: 100%;
         padding: 10px;
-        &:hover {background-color: #3c5a95;transition: all .1s linear;}
+        &:hover {
+                background-color: #3c5a95;
+                transition: all .1s linear;
+                & a {
+                    color: #ebcf9b;
+                }
+            }
     }
 
     & iframe {
