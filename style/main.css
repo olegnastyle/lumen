@@ -2423,7 +2423,7 @@ footer {
     transform: scale(0);
     transition: all .3s linear;
 
-    & .auth, .pass {
+    & .auth, .pass, .regist{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2442,12 +2442,17 @@ footer {
             width: 300px;
         }
 
-        & input[type="submit"] {
+        & input[type="submit"], .reg {
             cursor: pointer;
             background-color: #007aff;
             color: white;
             width: 100%;
-
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
             &:focus {
                 outline: solid 1px #ebcf9b;
             }
@@ -2460,6 +2465,10 @@ footer {
             &:active {
                 filter: brightness(.8);
             }
+        }
+
+        & .reg {
+            opacity: .4;
         }
 
         & input[type="text"],
@@ -2495,6 +2504,16 @@ footer {
                 width: auto;
             }
 
+            &:hover {
+                color: #ebcf9b;
+            }
+        }
+    }
+
+    .regist {
+        & a {
+            color: #5389de;
+            transition: color .1s linear;
             &:hover {
                 color: #ebcf9b;
             }

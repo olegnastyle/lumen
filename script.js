@@ -78,8 +78,18 @@ function passHelpFlex(){
     document.querySelector(".pass").style.display = 'flex';
 }
 
+function registFlex(){
+    document.querySelector(".auth").style.display = 'none';
+    document.querySelector(".regist").style.display = 'flex';
+}
 
-function passHelpRevers(){
+
+function passHelpRevers(){ // при нажатии Восстановить, вернуть блок Авторизации
     document.querySelector(".auth").style.display = 'flex';
     document.querySelector(".pass").style.display = 'none';
+}
+
+function registFlexRevers(){ // при нажатии Регистрация, вернуть блок Авторизации
+    document.querySelector(".auth").style.display = 'flex';
+    document.querySelector(".regist").style.display = 'none';
 }
