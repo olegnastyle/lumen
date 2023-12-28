@@ -134,6 +134,20 @@
     }
 }
 
+@keyframes headerShow {
+    0% {
+        filter: drop-shadow(0 0 0px #3c5a95);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 10px #ebcf9b);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 0px #3c5a95);
+    }
+}
+
 a {
     color: #f1f1f1;
 }
@@ -143,7 +157,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     color: #ebcf9b;
-
+    animation: headerShow 3s infinite;
     &::before {
         content: url(../style/img/decoration.png);
     }
