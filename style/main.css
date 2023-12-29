@@ -476,9 +476,20 @@ footer {
         overflow: auto;
         height: 280px;
         border-radius: 10px;
-        -ms-overflow-style: none;
+        /* -ms-overflow-style: none;
         overflow: -moz-scrollbars-none;
-        &::-webkit-scrollbar { width: 0; }
+        &::-webkit-scrollbar { width: 0; } */
+        &::-webkit-scrollbar {
+            background-color: #25325e;
+            width: 15px;
+            height: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: #304170;
+            border-radius: 10px;
+        }
     }
 
     & li {
