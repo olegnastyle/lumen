@@ -965,8 +965,9 @@ footer {
 .share {
     display: flex;
     gap: 10px;
-    position: absolute;
-    top: 110px;
+    position: fixed;
+    bottom: 10px;
+    z-index: 10;
     & img {
         display: block;
         width: 40px;
