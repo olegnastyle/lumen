@@ -248,6 +248,11 @@ header {
             position: absolute;
             left: 140px;
             font-size: 14px;
+            &:hover {
+                color: #ebcf9b;
+                transform: scale(1.1);
+                transition: all .1s linear;
+            }
         }
     }
 

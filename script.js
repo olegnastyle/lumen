@@ -59,6 +59,8 @@ function navMobileClose(){
 
 function authActive(){
     document.getElementById("auth").style.transform = 'scale(1)';
+    document.querySelector(".regist").style.display = 'none';
+    document.querySelector(".auth").style.display = 'flex';
 }
 
 function authClose(){
