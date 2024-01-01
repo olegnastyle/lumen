@@ -79,6 +79,7 @@ function passHelpFlex(){
 }
 
 function registFlex(){
+    document.getElementById("auth").style.transform = 'scale(1)';
     document.querySelector(".auth").style.display = 'none';
     document.querySelector(".regist").style.display = 'flex';
 }

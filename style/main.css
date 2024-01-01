@@ -241,6 +241,16 @@ header {
             margin-left: 80px;
         }
     }
+   
+    #head-login {
+        position: relative;
+        & a:nth-child(2) {
+            position: absolute;
+            left: 140px;
+            font-size: 14px;
+        }
+    }
+
     & nav {
         display: flex;
         gap: 60px;
