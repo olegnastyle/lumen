@@ -368,7 +368,7 @@
         width: 980px;
         & #multiaccount {margin-left: 60px;font-size: 12px;}
         & .login {zoom: 80%;}
-        & nav {gap: 20px;font-size: 13px;}
+        & nav {gap: 20px;font-size: 13px;margin-left: 30px;}
     }
 
     main {
@@ -380,8 +380,17 @@
         margin: 80px 0 0 240px;
     }
 
+    .register {
+        zoom: 80%;
+        margin-left: -30px;
+    }
+
     .persons {
         width: 880px;
+    }
+
+    .lang {
+        text-wrap: nowrap;
     }
 
     .block {
@@ -428,6 +437,9 @@
         display: flex;
         width: 1280px;
         height: 80px;
+        & nav {
+            gap: 30px;
+        }
     }
 
     main {
@@ -447,6 +459,8 @@
     .login {
         zoom: normal;
     }
+
+    
 
     .persons {
         width: 1280px;
