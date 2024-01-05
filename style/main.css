@@ -1019,6 +1019,7 @@ footer {
     &:hover {
         background-color: #304170;
         border-radius: 10px;
+        transition: all .1s linear;
         & img {
             filter: grayscale(1);
         }
