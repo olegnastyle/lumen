@@ -217,7 +217,7 @@ header {
         background: url(../style/img/bg-login.png);
         background-size: contain;
         background-repeat: no-repeat;
-        width: 280px;
+        width: 250px;
         height: 40px;
         cursor: pointer;
         color: #253358;
@@ -1113,6 +1113,14 @@ footer {
     height: 100%;
     transition: all 1s linear;
     background-color: #1e2947;
+
+    & button:nth-child(1) {
+        cursor: pointer;
+        &:hover {
+            color: #ebcf9b;
+            transition: all .1s linear;
+        }
+    }
 
     & button {
         position: absolute;
