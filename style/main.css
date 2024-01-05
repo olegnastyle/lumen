@@ -1015,6 +1015,14 @@ footer {
     position: fixed;
     bottom: 10px;
     z-index: 10;
+    padding: 10px 20px;
+    &:hover {
+        background-color: #304170;
+        border-radius: 10px;
+        & img {
+            filter: grayscale(1);
+        }
+    }
     & img {
         display: block;
         width: 40px;
