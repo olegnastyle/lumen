@@ -241,19 +241,40 @@ header {
             margin-left: 80px;
         }
     }
+    & .register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../style/img/register.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 190px;
+        height: 40px;
+        cursor: pointer;
+        color: #253358;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 12px;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 9999;
+
+        &:hover {
+            filter: brightness(1.5);
+            transition: filter .3s ease;
+        }
+
+        &:active {
+            filter: brightness(1);
+        }
+
+        & span {
+            margin-left: 80px;
+        }
+    }
    
     #head-login {
-        position: relative;
-        & a:nth-child(2) {
-            position: absolute;
-            left: 140px;
-            font-size: 14px;
-            &:hover {
-                color: #ebcf9b;
-                transform: scale(1.1);
-                transition: all .1s linear;
-            }
-        }
+        display: flex;
     }
 
     & nav {
