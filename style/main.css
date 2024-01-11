@@ -543,8 +543,7 @@ footer {
     }
 
     & iframe {
-        border: solid 5px #486bb1;
-        border-radius: 10px;
+        border-radius: 30px;
         -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
@@ -580,18 +579,15 @@ footer {
     position: relative;
     &::before {
         content: '';
-        background-image: url(../style/img/decore.png);
+        background-image: url(../style/img/bg-twitch2.png);
         background-repeat: no-repeat;
         background-size: contain;
         position: absolute;
-        top: -80px;
-        left: -40px;
         z-index: 2;
         display: block;
-        width: 150px;
-        height: 150px;
-        filter: brightness(1);
-        animation: animalFire 5s linear infinite;
+        width: 620px;
+        height: 358px;
+        /* animation: animalFire 5s linear infinite; */
     }
 }
 
