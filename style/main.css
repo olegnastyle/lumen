@@ -543,15 +543,15 @@ footer {
     }
 
     & iframe {
-        border-radius: 30px;
+        border-radius: 20px;
+        padding: 5px 10px;
+        margin-top: 3px;
         -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         position: relative;
         z-index: 1;
-
         &:hover {
-            border: solid 5px #ebcf9b;
             transition: all .5s linear;
 
             -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
@@ -560,8 +560,14 @@ footer {
         }
     }
 }
+#twitch-embed {
+    border-image-width: 100%;
+    border-image-source: url(../style/img/bg-twitch2.png);
+    border-image-slice: 310;
+    border-radius: 10px;
+}
 
-.event-panel {
+.event-panel  {
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
     flex-direction: column;
@@ -577,18 +583,7 @@ footer {
 .twitch {
     grid-area: 1 / 2 / 2 / 3;
     position: relative;
-    &::before {
-        content: '';
-        background-image: url(../style/img/bg-twitch2.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        z-index: 2;
-        display: block;
-        width: 620px;
-        height: 358px;
-        /* animation: animalFire 5s linear infinite; */
-    }
+    
 }
 
 .online-register {
