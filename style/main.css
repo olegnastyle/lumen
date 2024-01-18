@@ -1007,8 +1007,10 @@ footer {
     bottom: 10px;
     z-index: 10;
     padding: 10px 20px;
+    border: solid 1px #ebcf9b00;
     &:hover {
         background-color: #304170;
+        border: solid 1px #ebcf9b;
         border-radius: 10px;
         transition: all .1s linear;
         -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
