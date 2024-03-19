@@ -198,7 +198,7 @@ body {
 body {
     background: url(../style/img/bg.png), #253358;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 150%;
     background-position: top;
     background-attachment:scroll;
 }
