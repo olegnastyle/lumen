@@ -201,6 +201,7 @@ body {
     background-size: 100% 150%;
     background-position: top;
     background-attachment:scroll;
+    background-blend-mode: lighten;
 }
 
 header {
