@@ -5,6 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="tesc.css">
+    <style>
+        /*.bg-dark {background-color: #282c33;}*/
+        /*.font-code {font-family: 'Fira Code', monospace;}*/
+        /*.quote {position: relative;}*/
+        /*.quote::before{content: url(./style/img/quote.svg);position: absolute;top: -16px;}*/
+        /*.quote::after{content: url(./style/img/quote.svg);position: absolute;bottom: -16px;right: 15px;}*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {width: 800px;margin: 0 auto;padding: 20px 40px;}
+
+        h1 {font-size: 48px;}
+
+        ol {font-size: 23px;}
+
+        ol li {
+            justify-content: space-between;
+            position: relative;
+            font-size: 23px;
+            padding: 10px;
+            margin: 10px;
+            background-color: brown;
+            color: wheat;
+            list-style: none;
+
+            & a {
+                color: wheat;
+            }
+
+            & span {
+                float: right;
+            }
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        ul li {
+            font-size: 23px;
+            &::marker {
+                content: '— ';
+            }
+        }
+
+
+        blockquote {
+            font-family: monospace;
+            padding: 20px;
+            font-size: 23px;
+            margin-top: 40px;
+            background-color: yellow;
+        }
+
+        h3 {
+            margin-top: 40px;
+            font-size: 42px;
+            font-weight: normal;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            & h2 {
+                font-size: 32px;
+            }
+
+            & p {
+                font-size: 23px;
+            }
+        }
+    </style>
 </head>
 <body>
     <input type="radio" name="auth-nav" id="auth-nav">
